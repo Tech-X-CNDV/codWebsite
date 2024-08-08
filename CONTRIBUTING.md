@@ -11,3 +11,4 @@ The owners have the right to restore the website to any version they consider an
 **Expected behavior**
 Contributors should respect the naming of classes, IDs ecc. to ensure that others can understand and reproduce any given line of code with ease. 
 
+
