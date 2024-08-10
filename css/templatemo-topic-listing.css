@@ -743,6 +743,18 @@ strong {
     border-radius: 30px 30px 30px 30px;
     text-align: center;
 }
+.custom-block-image-finantare{
+  display: block;
+  aspect-ratio: 1.3;
+  height: 200px;
+  width: 260px;
+  object-fit:scale-down;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px 30px 30px 30px;
+}
 
 .custom-block-image-cad{
   display: block;
@@ -867,6 +879,7 @@ strong {
 .topics-detail-block-image {
   display: block;
   border-radius: var(--border-radius-medium);
+  margin-top: 25px;
 }
 
 .topics-detail-video {
