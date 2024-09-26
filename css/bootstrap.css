@@ -4345,6 +4345,10 @@ fieldset:disabled .btn {
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
 }
 
+.navbar-subpage {
+    background-image: linear-gradient(15deg, #007bff 0%, #c1d2e3 100%);
+}
+
 .navbar>.container,
 .navbar>.container-fluid,
 .navbar>.container-lg,
