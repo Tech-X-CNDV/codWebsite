@@ -64,7 +64,7 @@ p {
   max-height: 150px;
   /* overflow: hidden; */
   z-index: 1;
-  animation: container-move-down 4s linear forwards;
+  animation: container-move-down 2s linear forwards;
 } 
 
 .blue-container {
@@ -76,7 +76,7 @@ p {
     background-color: blue;
     z-index: 1; 
     clip-path: url(#wave-clip); 
-    animation: container-move-down-fill 5.7s linear forwards; /* Apply the same animation */
+    animation: container-move-down-fill 2s linear forwards; /* Apply the same animation */
   }
 
 /* Animation for the container */
@@ -85,21 +85,39 @@ p {
     transform: translateY(0); /* Start above the viewport */
   }
   100% {
-    transform: translateY(calc(100vh - 70%));
-    /* transform: translateY(100%); */
+    transform: translateY(calc(100vh - 100% + 5vh));
   }
 }
 
-/* Animation for the container */
+/* Animation for the container mobile */
+@keyframes container-move-down-mobile {
+  0% {
+    transform: translateY(0); /* Start above the viewport */
+  }
+  100% {
+    transform: translateY(calc(100vh - 100% + 10vh));
+  }
+}
+
+/* Animation for the background fill */
 @keyframes container-move-down-fill {
     0% {
-      transform: translateY(15%); /* Start above the viewport */
+      transform: translateY(10vh); /* Start above the viewport */
     }
     100% {
-      transform: translateY(150%);
-      /* transform: translateY(100%); */
+      transform: translateY(calc(100vh - 100% + 90vh));
     }
+}
+
+/* Animation for the background fill mobile */
+@keyframes container-move-down-fill-mobile {
+  0% {
+    transform: translateY(15vh); /* Start above the viewport */
   }
+  100% {
+    transform: translateY(calc(100vh - 100% + 100vh));
+  }
+}
 
 /* Animation for the inner waves */
 .parallax > use {
@@ -131,7 +149,7 @@ p {
 }
 
 /* Shrinking for mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .waves {
     height: 40px;
     min-height: 40px;
@@ -141,5 +159,16 @@ p {
   }
   h1 {
     font-size: 24px;
+  }
+} */
+
+/* Media query for mobile devices */
+@media (max-width: 768px) { 
+  .waves {
+      animation: container-move-down-mobile 2.2s linear forwards; /* Apply the mobile animation */
+  }
+
+  .blue-container {
+      animation: container-move-down-fill-mobile 2.2s linear forwards; 
   }
 }
