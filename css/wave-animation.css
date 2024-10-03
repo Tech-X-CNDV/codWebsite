@@ -85,24 +85,24 @@ p {
     transform: translateY(0); /* Start above the viewport */
   }
   100% {
-    transform: translateY(calc(100vh - 100% + 5vh));
+    transform: translateY(calc(100vh - 100% + 8vh));
   }
 }
 
 /* Animation for the container mobile */
 @keyframes container-move-down-mobile {
   0% {
-    transform: translateY(0); /* Start above the viewport */
+    transform: translateY(5vh); /* Start above the viewport */
   }
   100% {
-    transform: translateY(calc(100vh - 100% + 10vh));
+    transform: translateY(calc(100vh - 100% + 1vh));
   }
 }
 
 /* Animation for the background fill */
 @keyframes container-move-down-fill {
     0% {
-      transform: translateY(10vh); /* Start above the viewport */
+      transform: translateY(5vh); /* Start above the viewport */
     }
     100% {
       transform: translateY(calc(100vh - 100% + 90vh));
@@ -112,10 +112,10 @@ p {
 /* Animation for the background fill mobile */
 @keyframes container-move-down-fill-mobile {
   0% {
-    transform: translateY(15vh); /* Start above the viewport */
+    transform: translateY(17vh); /* Start above the viewport */
   }
   100% {
-    transform: translateY(calc(100vh - 100% + 100vh));
+    transform: translateY(calc(100vh - 100% + 90vh));
   }
 }
 
@@ -163,12 +163,12 @@ p {
 } */
 
 /* Media query for mobile devices */
-@media (max-width: 768px) { 
+@media (max-width: 768px) or (max-aspect-ratio: 20/9) { 
   .waves {
       animation: container-move-down-mobile 2.2s linear forwards; /* Apply the mobile animation */
   }
 
   .blue-container {
-      animation: container-move-down-fill-mobile 2.2s linear forwards; 
+      animation: container-move-down-fill-mobile 2.4s linear forwards; 
   }
 }
