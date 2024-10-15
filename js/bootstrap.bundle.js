@@ -1472,6 +1472,7 @@
   const EVENT_HIDDEN$6 = `hidden${EVENT_KEY$7}`;
   const EVENT_CLICK_DATA_API$4 = `click${EVENT_KEY$7}${DATA_API_KEY$4}`;
   const CLASS_NAME_SHOW$7 = 'show';
+  const CLASS_NAME_OPAQUEBACKGROUND = 'opaque-dropdown';
   const CLASS_NAME_COLLAPSE = 'collapse';
   const CLASS_NAME_COLLAPSING = 'collapsing';
   const CLASS_NAME_COLLAPSED = 'collapsed';
@@ -1566,7 +1567,7 @@
       const complete = () => {
         this._isTransitioning = false;
         this._element.classList.remove(CLASS_NAME_COLLAPSING);
-        this._element.classList.add(CLASS_NAME_COLLAPSE, CLASS_NAME_SHOW$7);
+        this._element.classList.add(CLASS_NAME_COLLAPSE, CLASS_NAME_SHOW$7, CLASS_NAME_OPAQUEBACKGROUND);
         this._element.style[dimension] = '';
         EventHandler.trigger(this._element, EVENT_SHOWN$6);
       };
@@ -1587,7 +1588,7 @@
       this._element.style[dimension] = `${this._element.getBoundingClientRect()[dimension]}px`;
       reflow(this._element);
       this._element.classList.add(CLASS_NAME_COLLAPSING);
-      this._element.classList.remove(CLASS_NAME_COLLAPSE, CLASS_NAME_SHOW$7);
+      this._element.classList.remove(CLASS_NAME_COLLAPSE, CLASS_NAME_SHOW$7, CLASS_NAME_OPAQUEBACKGROUND);
       for (const trigger of this._triggerArray) {
         const element = SelectorEngine.getElementFromSelector(trigger);
         if (element && !this._isShown(element)) {
