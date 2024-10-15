@@ -80,6 +80,11 @@
 
             s.stickyElement.parent().addClass(s.className);
 
+            if (window.location.pathname === '/sezon9.html' && newTop !== null) { 
+              s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
+              s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
+            }
+
             if (s.currentTop === null) {
               s.stickyElement.trigger('sticky-start', [s]);
             } else {
