@@ -1512,6 +1512,11 @@ progress {
         width: 100%
     }
 
+    .col-lg-13 {
+        flex: 0 0 auto;
+        width: 45%
+    }
+
     .offset-lg-0 {
         margin-left: 0
     }
@@ -8603,6 +8608,33 @@ fieldset:disabled .btn {
 .mx-5 {
     margin-right: 3rem !important;
     margin-left: 3rem !important
+}
+
+.mx-6 {
+    margin-right: auto !important;
+    margin-left: -40px
+}
+
+@media (max-width: 767px) {
+    .mx-6 {
+        margin-left: auto !important
+    }
+  }
+
+.mx-7 {
+    margin-right: -40px;
+    margin-left: auto !important
+}
+
+@media (max-width: 767px) {
+    .mx-7 {
+        margin-right: auto !important
+    }
+}
+
+.mx-8 {
+    margin-right: auto;
+    margin-left: auto !important
 }
 
 .mx-auto {
