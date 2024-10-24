@@ -1439,6 +1439,13 @@ progress {
     }
 }
 
+@media (min-width: 1320px){
+    .col-lg-17{
+        flex: 0 0 auto;
+        display: none;
+    }
+}
+
 @media (min-width:992px) {
     .col-lg {
         flex: 1 0 0%
@@ -1567,6 +1574,11 @@ progress {
         grid-column: 3
     }
 
+    .col-lg-17 {
+        flex: 0 0 auto;
+        width: 100%
+    }
+
     @media (max-width: 1320px){
         .col-lg-15 {
             flex: 0 0 auto;
@@ -1574,7 +1586,9 @@ progress {
             width: 100%;
             height: 100%
         }
-        .col-lg-16 {
+        .col-lg-16,
+        .col-lg-13,
+        .col-lg-14 {
             flex: 0 0 auto;
             display: none;
         }
