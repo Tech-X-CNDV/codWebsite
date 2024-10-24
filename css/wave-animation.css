@@ -108,7 +108,7 @@ p {
     width: 100%;
     height: 100%;
     background-color: blue;
-    z-index: 0; 
+    z-index: 1; 
     clip-path: url(#wave-clip); 
     animation: container-move-down-fill 2.3s linear forwards; /* Apply the same animation */
   }
