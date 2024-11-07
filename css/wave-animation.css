@@ -65,18 +65,52 @@ p {
   /* overflow: hidden; */
   z-index: 1;
   animation: container-move-down 2s linear forwards;
-} 
+}
+
+.waves-line{
+  position: absolute;
+  top: 40%;
+  left:  -1.5%;;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 10%;
+}
+
+.waves-line-op{
+  position: absolute;
+  top: 40%;
+  left: 1.5%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 10%;
+}
+
+@media(max-width: 1550px){
+  .waves-line,
+  .waves-line-op{
+    width: 0;
+    height: 0;
+  }
+}
+
+.waves-line {
+  transform: rotate(-90deg);
+}
+
+.waves-line-op {
+  transform: rotate(90deg); 
+}
 
 .blue-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 100%;
     background-color: blue;
     z-index: 1; 
     clip-path: url(#wave-clip); 
-    animation: container-move-down-fill 2s linear forwards; /* Apply the same animation */
+    animation: container-move-down-fill 2.3s linear forwards; /* Apply the same animation */
   }
 
 /* Animation for the container */
@@ -85,7 +119,7 @@ p {
     transform: translateY(0); /* Start above the viewport */
   }
   100% {
-    transform: translateY(calc(100vh - 100% + 8vh));
+    transform: translateY(90vh);
   }
 }
 
@@ -95,7 +129,7 @@ p {
     transform: translateY(5vh); /* Start above the viewport */
   }
   100% {
-    transform: translateY(calc(100vh - 100% + 1vh));
+    transform: translateY(90vh);
   }
 }
 
@@ -105,7 +139,7 @@ p {
       transform: translateY(5vh); /* Start above the viewport */
     }
     100% {
-      transform: translateY(calc(100vh - 100% + 90vh));
+      transform: translateY(120vh);
     }
 }
 
@@ -115,7 +149,7 @@ p {
     transform: translateY(17vh); /* Start above the viewport */
   }
   100% {
-    transform: translateY(calc(100vh - 100% + 90vh));
+    transform: translateY(105vh);
   }
 }
 
@@ -163,7 +197,7 @@ p {
 } */
 
 /* Media query for mobile devices */
-@media (max-width: 768px) or (max-aspect-ratio: 20/9) { 
+@media (max-width: 768px) { 
   .waves {
       animation: container-move-down-mobile 2.2s linear forwards; /* Apply the mobile animation */
   }
