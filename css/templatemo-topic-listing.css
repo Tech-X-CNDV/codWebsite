@@ -31,6 +31,7 @@
   --h4-font-size:                 28px;
   --h5-font-size:                 24px;
   --h6-font-size:                 22px;
+  --h7-font-size:                 18px;
   --p-font-size:                  20px;
   --menu-font-size:               14px;
   --btn-font-size:                18px;
@@ -60,7 +61,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   color: var(--dark-color);
 }
 
@@ -69,7 +71,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h7 {
   font-family: var(--title-font-family); 
   font-weight: var(--font-weight-semibold);
 }
@@ -99,6 +102,10 @@ h5 {
 h6 {
   /*color: var(--primary-color);*/
   font-size: var(--h6-font-size);
+}
+
+h7 {
+  font-size: var(--h7-font-size);
 }
 
 p {
@@ -1389,6 +1396,10 @@ blockquote {
 
   h6 {
     font-size: 18px;
+  }
+
+  h7 {
+    font-size: 14px;
   }
 
   .section-padding {
