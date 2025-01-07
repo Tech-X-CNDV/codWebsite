@@ -80,7 +80,7 @@
 
             s.stickyElement.parent().addClass(s.className);
 
-            if (window.location.pathname === '/sezon9' && newTop !== null) { 
+            if (window.location.pathname.includes('sezon9') && newTop !== null) { 
               s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
               s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
             }
