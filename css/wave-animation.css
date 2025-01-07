@@ -58,13 +58,13 @@ p {
   width: 100%;
   height: 100%;
   left: 0;
-  top: 0;
+  top: auto;
+  bottom: 0;
   margin-bottom: 0;
   min-height: 100px;
   max-height: 150px;
   /* overflow: hidden; */
   z-index: 1;
-  animation: container-move-down 2s linear forwards;
 }
 
 .waves-line{
@@ -103,55 +103,15 @@ p {
 
 .blue-container {
     position: fixed;
-    top: 0;
+    top: auto;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: blue;
     z-index: 1; 
     clip-path: url(#wave-clip); 
-    animation: container-move-down-fill 2.3s linear forwards; /* Apply the same animation */
   }
-
-/* Animation for the container */
-@keyframes container-move-down {
-  0% {
-    transform: translateY(0); /* Start above the viewport */
-  }
-  100% {
-    transform: translateY(90vh);
-  }
-}
-
-/* Animation for the container mobile */
-@keyframes container-move-down-mobile {
-  0% {
-    transform: translateY(5vh); /* Start above the viewport */
-  }
-  100% {
-    transform: translateY(90vh);
-  }
-}
-
-/* Animation for the background fill */
-@keyframes container-move-down-fill {
-    0% {
-      transform: translateY(5vh); /* Start above the viewport */
-    }
-    100% {
-      transform: translateY(120vh);
-    }
-}
-
-/* Animation for the background fill mobile */
-@keyframes container-move-down-fill-mobile {
-  0% {
-    transform: translateY(17vh); /* Start above the viewport */
-  }
-  100% {
-    transform: translateY(105vh);
-  }
-}
 
 /* Animation for the inner waves */
 .parallax > use {
@@ -179,30 +139,5 @@ p {
   }
   100% { 
     transform: translate3d(85px,0,0);
-  }
-}
-
-/* Shrinking for mobile */
-/* @media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-  .content {
-    height: 30vh;
-  }
-  h1 {
-    font-size: 24px;
-  }
-} */
-
-/* Media query for mobile devices */
-@media (max-width: 768px) { 
-  .waves {
-      animation: container-move-down-mobile 2.2s linear forwards; /* Apply the mobile animation */
-  }
-
-  .blue-container {
-      animation: container-move-down-fill-mobile 2.4s linear forwards; 
   }
 }
