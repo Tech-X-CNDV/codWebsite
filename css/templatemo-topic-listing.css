@@ -739,7 +739,7 @@ strong {
 body.subpage-blue .custom-block-image-news {
   /* Styles specific to the subpage */
   position: absolute;
-  top: 40px;
+  top: -10px;
   right: 20%;
   height: 350px; 
   object-fit: contain;
