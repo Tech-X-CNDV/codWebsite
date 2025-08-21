@@ -80,10 +80,10 @@
 
             s.stickyElement.parent().addClass(s.className);
 
-            // (window.location.pathname.includes('sezon9') && newTop !== null) { 
-            //  s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
-            //  s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
-            //}
+            if (window.location.pathname.includes('sezon9') && newTop !== null) { 
+              s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
+              s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
+            }
 
             if (s.currentTop === null) {
               s.stickyElement.trigger('sticky-start', [s]);
