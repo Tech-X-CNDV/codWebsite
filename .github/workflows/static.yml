@@ -31,13 +31,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Cache bust assets with commit hash
+        run: |
+          COMMIT_HASH=$(git rev-parse --short HEAD)
+          sed -i "s/\.css\"/\.css?v=${COMMIT_HASH}\"/g" index.html
+          sed -i "s/\.js\"/\.js?v=${COMMIT_HASH}\"/g" index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '.'
+          
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
