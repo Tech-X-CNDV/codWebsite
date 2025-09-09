@@ -35,8 +35,8 @@ jobs:
       - name: Cache bust assets with commit hash
         run: |
           COMMIT_HASH=$(git rev-parse --short HEAD)
-          sed -i "s/\.css\"/\.css?v=${COMMIT_HASH}\"/g" index.html
-          sed -i "s/\.js\"/\.js?v=${COMMIT_HASH}\"/g" index.html
+          find . -name "*.html" -exec sed -i "s/\.css\"/\.css?v=${COMMIT_HASH}\"/g" {} \;
+          find . -name "*.html" -exec sed -i "s/\.js\"/\.js?v=${COMMIT_HASH}\"/g" {} \;
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
