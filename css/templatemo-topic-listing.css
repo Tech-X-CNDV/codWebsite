@@ -764,9 +764,8 @@ body.subpage-blue .custom-block-image-news {
     margin-bottom: -50px;
     max-width: 100%;
   }
-}
 
-.custom-block-gif{
+  .custom-block-gif{
   position: static;
     height: 300px; 
     object-fit: scale-down; 
@@ -775,6 +774,7 @@ body.subpage-blue .custom-block-image-news {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+}
 }
 
 .custom-block-image-presa {
