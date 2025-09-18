@@ -1,5 +1,5 @@
 const compManualLink = 'https://ftc-resources.firstinspires.org/ftc/game/manual';
-const compYear = '2025';
+const compYear = '2025-2026';
 document.addEventListener('DOMContentLoaded', () => {
   const linkElement = document.getElementById('CompManual');
   if (linkElement) {
