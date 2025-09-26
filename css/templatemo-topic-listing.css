@@ -749,12 +749,22 @@ body.subpage-blue .custom-block-image-news {
 }
 
 .custom-block-gif{
-  height: 500px;
-  margin-top: -200px;
-  margin-right: 100px;
+  width: 40%;
+  margin-top: -60px;
 }
 
-@media (max-width: 991px) {
+.custom-block-gif-image{
+  margin-top: -10px;
+    width: 32.5%;
+}
+
+@media (max-width: 767.98px) {
+  .custom-block-gif-image{
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.981px) {
   body.subpage-blue .custom-block-image-news {
     /* Styles specific to the subpage */
     position: static;
@@ -767,13 +777,12 @@ body.subpage-blue .custom-block-image-news {
 
 .custom-block-gif{
   position: static;
-    height: 300px; 
+    width: 300px; 
     object-fit: scale-down; 
     margin-top: -10px;
     margin-bottom: -50px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 100%;
   }
 }
 

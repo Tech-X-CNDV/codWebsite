@@ -716,6 +716,15 @@ progress {
     overflow: hidden;
 }
 
+.full-link {
+        position: absolute; /* Positions the link relative to its nearest positioned ancestor (.hostico-link-container) */
+        top: 0;
+        left: 0;
+        width: 100%; /* Stretches the link horizontally */
+        height: 100%; /* Stretches the link vertically */
+        z-index: 1; /* Ensures the link is "on top" of other content (like the image or text) so it's clickable */
+    }
+
 @media (max-width: 1320px){
     .container-s9{
         display: block;
