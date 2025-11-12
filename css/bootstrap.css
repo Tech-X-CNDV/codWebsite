@@ -9304,6 +9304,16 @@ fieldset:disabled .btn {
     color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important
 }
 
+.text-white-stroked {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+    text-shadow: 
+    1px 1px 0 black,  /* Bottom-right */
+   -1px 1px 0 black,  /* Bottom-left */
+    1px -1px 0 black, /* Top-right */
+   -1px -1px 0 black; /* Top-left */
+}
+
 .text-white div{
     --bs-text-opacity: 1;
     color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important
