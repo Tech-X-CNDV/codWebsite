@@ -28,6 +28,12 @@
     $document = $(document),
     sticked = [],
     windowHeight = $window.height(),
+    applyWrapperClass = function(s) {
+      if (window.location.pathname.includes('sezon9')) {
+        s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
+        s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
+      }
+    },
     scroller = function () {
       var scrollTop = $window.scrollTop(),
         documentHeight = $document.height(),
@@ -153,6 +159,8 @@
           o.stickyElement = stickyElement;
           o.stickyWrapper = stickyWrapper;
           o.currentTop = null;
+
+          applyWrapperClass(o);
 
           sticked.push(o);
         });
