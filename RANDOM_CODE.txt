@@ -82,7 +82,7 @@
 
                                     </div>
 
-                                    <img src="Sezon 8/nationala/ROBOT_NATIONALA_S8.png" class="custom-block-image-cad img-fluid" alt="">
+                                    <img src="Sezon8/nationala/ROBOT_NATIONALA_S8.png" class="custom-block-image-cad img-fluid" alt="">
                                 </a>
                             </div>
 
@@ -155,7 +155,7 @@ https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftech-x.ro%2Fdocs%2FD230-c
                         <div class="clearfix"></div>
 
                         <div class="col-lg-4 col-12">
-                            <img src="poze/logo/LOGO_TX.jpeg" class="img-fluid justify-content-center" alt="FAQs">
+                            <img src="/poze/logo/LOGO_TX.jpeg" class="img-fluid justify-content-center" alt="FAQs">
                         </div>
 
                         <div class="col-xl-8 col-12 m-auto">
@@ -181,7 +181,7 @@ https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftech-x.ro%2Fdocs%2FD230-c
                                                                     <p class="mb-0 text-center">2019-2020</p>
                                                                 </div>
                                                             </div>
-                                                            <img src="poze/lideri/darius.jpeg" class="custom-block-image-membri img-fluid" alt="">
+                                                            <img src="/poze/lideri/darius.jpeg" class="custom-block-image-membri img-fluid" alt="">
                                                             <ul class="social-icon-membri d-flex align-items-center justify-content-center mt-3">
 
                                                                 <li class="social-icon-item-membri">
@@ -204,7 +204,7 @@ https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftech-x.ro%2Fdocs%2FD230-c
                                                                     <p class="mb-0 text-center">2020-2022</p>
                                                                 </div>
                                                             </div>
-                                                            <img src="poze/lideri/rodila.jpg" class="custom-block-image-membri img-fluid" alt="">
+                                                            <img src="/poze/lideri/rodila.jpg" class="custom-block-image-membri img-fluid" alt="">
                                                             <ul class="social-icon-membri d-flex align-items-center justify-content-center mt-3">
 
                                                                 <li class="social-icon-item-membri">
@@ -227,7 +227,7 @@ https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftech-x.ro%2Fdocs%2FD230-c
                                                                     <p class="mb-0 text-center">2022-2023</p>
                                                                 </div>
                                                             </div>
-                                                            <img src="poze/membri/silviuPontos.JPG" class="custom-block-image-membri img-fluid" alt="">
+                                                            <img src="/poze/membri/silviuPontos.JPG" class="custom-block-image-membri img-fluid" alt="">
                                                             <ul class="social-icon-membri d-flex align-items-center justify-content-center mt-3">
 
                                                                 <li class="social-icon-item-membri">
@@ -254,7 +254,7 @@ https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftech-x.ro%2Fdocs%2FD230-c
                                                                     <p class="mb-0 text-center">2023-2024</p>
                                                                 </div>
                                                             </div>
-                                                            <img src="poze/membri/silviuPontos.JPG" class="custom-block-image-membri img-fluid" alt="">
+                                                            <img src="/poze/membri/silviuPontos.JPG" class="custom-block-image-membri img-fluid" alt="">
                                                             <ul class="social-icon-membri d-flex align-items-center justify-content-center mt-3">
 
                                                                 <li class="social-icon-item-membri">
@@ -350,7 +350,7 @@ https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftech-x.ro%2Fdocs%2FD230-c
         <div class="col-lg-6 col-12">
                             <div class="custom-block custom-block-overlay">
                                 <div class="d-flex flex-column h-100">
-                                    <img src="Sezon 8/regionala/1.jpg" class="custom-block-image img-fluid" alt="">
+                                    <img src="Sezon8/regionala/1.jpg" class="custom-block-image img-fluid" alt="">
 
                                     <div class="custom-block-overlay-text d-flex">
                                         <div>
