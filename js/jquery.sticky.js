@@ -33,6 +33,10 @@
         s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
         s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
       }
+      if (window.location.pathname.includes('mUnire')) {
+        s.stickyWrapper.attr('id', 'sticky-wrapper-unire'); 
+        s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-unire');
+      }
     },
     scroller = function () {
       var scrollTop = $window.scrollTop(),
@@ -89,6 +93,11 @@
             if (window.location.pathname.includes('sezon9') && newTop !== null) { 
               s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
               s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
+            }
+
+            if (window.location.pathname.includes('mUnire') && newTop !== null) { 
+              s.stickyWrapper.attr('id', 'sticky-wrapper-unire'); 
+              s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-unire');
             }
 
             if (s.currentTop === null) {
