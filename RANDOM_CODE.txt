@@ -82,7 +82,7 @@
 
                                     </div>
 
-                                    <img src="Sezon8/nationala/ROBOT_NATIONALA_S8.png" class="custom-block-image-cad img-fluid" alt="">
+                                    <img src="/Sezon8/nationala/ROBOT_NATIONALA_S8.png" class="custom-block-image-cad img-fluid" alt="">
                                 </a>
                             </div>
 
@@ -350,7 +350,7 @@ https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftech-x.ro%2Fdocs%2FD230-c
         <div class="col-lg-6 col-12">
                             <div class="custom-block custom-block-overlay">
                                 <div class="d-flex flex-column h-100">
-                                    <img src="Sezon8/regionala/1.jpg" class="custom-block-image img-fluid" alt="">
+                                    <img src="/Sezon8/regionala/1.jpg" class="custom-block-image img-fluid" alt="">
 
                                     <div class="custom-block-overlay-text d-flex">
                                         <div>
