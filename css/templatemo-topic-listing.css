@@ -474,10 +474,25 @@ strong {
   pointer-events: none;
 }
 
+.navbar .dropdown-menu::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.navbar .dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.navbar .dropdown-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .navbar .dropdown-menu-lg {
+  max-height: 90vh;
+  overflow-y: auto;
   width: auto !important; 
-  min-width: 600px !important;
-  max-width: 600px !important;
+  min-width: 540px !important;
+  max-width: 540px !important;
   padding: 5px 0 0px 0 !important;
   border: 5px;
   border-radius: 5px;
@@ -553,6 +568,8 @@ strong {
     pointer-events: auto;
   }
   .navbar .dropdown-menu-lg {
+    max-height: 75vh;
+    overflow-y: auto;
     width: auto !important; 
     min-width: auto !important;
     max-width: 96% !important;
