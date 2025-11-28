@@ -102,12 +102,58 @@
             <div class="container">
                 <div class="row justify-content-center mt-5">
                     <div class="col-lg-8 col-12 d-flex justify-content-center">
-                        <img src="/mUnire/afis.jpg" class="img-fluid" alt="mUnire"
+                        <img src="/mUnire/afis/afis.jpg" class="img-fluid" alt="mUnire"
                             style="border: 3px solid black; border-radius: 15px;">
                     </div>
                 </div>
             </div>
         </section>
+        <section class="section-bg">
+            <div class="container mt-4">
+                <h3 class="mb-3">Galerie</h3>
+                <div id="galerie" class="row g-3">
+                    <!-- Images will be appended here by the script below -->
+                </div>
+            </div>
+        </section>
+        <script>
+            (function(){
+                const gallery = document.getElementById('galerie');
+                if(!gallery) return;
+                const base = '/mUnire/';
+                const seeds = ['afis.jpg'];
+                const exts = ['jpg','jpeg','png','webp,.JPG'];
+                const candidates = [];
+                // add some common name patterns
+                for(let i=1;i<=30;i++){
+                    exts.forEach(e=> candidates.push(`${i}.${e}`));
+                    candidates.push(`photo${i}.jpg`);
+                    candidates.push(`foto${i}.jpg`);
+                }
+                const list = [...new Set([...seeds, ...candidates])];
+                let found = 0;
+                list.forEach(name=>{
+                    const img = new Image();
+                    img.src = base + name;
+                    img.onload = ()=>{
+                        const col = document.createElement('div');
+                        col.className = 'col-6 col-md-4 col-lg-3';
+                        img.className = 'img-fluid rounded';
+                        img.alt = name;
+                        col.appendChild(img);
+                        gallery.appendChild(col);
+                        found++;
+                    };
+                    img.onerror = ()=>{};
+                });
+                // show message if nothing found after a short delay
+                setTimeout(()=>{
+                    if(found === 0){
+                        gallery.innerHTML = '<p>Nu s-au găsit imagini în galerie.</p>';
+                    }
+                }, 1000);
+            })();
+        </script>
     </main>
     <footer class="site-footer section-padding">
         <div class="container">
