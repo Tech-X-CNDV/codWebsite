@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarcă Documentul PDF</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fbc02d; 
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 80%;
+        }
+
+        embed {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .btn-download {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h2>Previzualizare Document</h2>
+        
+        <embed src="docs\D230-complet-Tech-X 2025.pdf" width="500" height="375" type="application/pdf">
+
+        <br><p>
+            „Dacă doriți să sprijiniți echipa noastră, vă invităm să descărcați, să completați și să depuneți formularul la ANAF-ul de domiciliu.”
+        </p><br>
+        <br>
+
+        <a href="docs\D230-complet-Tech-X 2025.pdf" download="Document-Echipa-TechX.pdf" class="btn-download">
+            Descarcă PDF-ul
+        </a>
+    </div>
+
+</body>
+</html>
