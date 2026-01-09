@@ -24,12 +24,20 @@
             text-align: center;
             max-width: 80%;
         }
+            .pdf-wrapper {
+        width: 100%;
+        max-width: 600px;
+        aspect-ratio: 4 / 3;
+        margin: 20px auto;
+    }
 
-        embed {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
+    .pdf-wrapper embed {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+        
         .btn-download {
             display: inline-block;
             padding: 12px 24px;
@@ -52,8 +60,9 @@
         
         <h2>Previzualizare Document</h2>
         
-        <embed src="docs\D230-complet-Tech-X 2025.pdf" width="500" height="375" type="application/pdf">
-
+        <div class="pdf-wrapper">
+    <embed src="docs/D230-complet-Tech-X 2025.pdf" type="application/pdf">
+</div>
         <br><p>
             „Dacă doriți să sprijiniți echipa noastră, vă invităm să descărcați, să completați și să depuneți formularul la ANAF-ul de domiciliu.”
         </p><br>
