@@ -1094,8 +1094,12 @@ body.subpage-blue .custom-block-image-news {
 
 .custom-block-gif-image {
   margin-top: -10px;
-  width: 32.5%;
+  width: 50%;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 767.98px) {

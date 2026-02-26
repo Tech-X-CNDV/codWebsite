@@ -653,12 +653,13 @@ progress {
 
 .img-fluid-activitati {
     display: block;
-    aspect-ratio: 1.66;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
+    border-radius: 15px;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important
 }
+
 .img-fluid-activitati:hover {
     transform: translateY(-3px);
 }
@@ -702,7 +703,7 @@ progress {
     margin-left: auto
 }
 
-.container-s9{
+.container-s9 {
     position: relative;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -717,16 +718,20 @@ progress {
 }
 
 .full-link {
-        position: absolute; /* Positions the link relative to its nearest positioned ancestor (.hostico-link-container) */
-        top: 0;
-        left: 0;
-        width: 100%; /* Stretches the link horizontally */
-        height: 100%; /* Stretches the link vertically */
-        z-index: 1; /* Ensures the link is "on top" of other content (like the image or text) so it's clickable */
-    }
+    position: absolute;
+    /* Positions the link relative to its nearest positioned ancestor (.hostico-link-container) */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Stretches the link horizontally */
+    height: 100%;
+    /* Stretches the link vertically */
+    z-index: 1;
+    /* Ensures the link is "on top" of other content (like the image or text) so it's clickable */
+}
 
-@media (max-width: 1320px){
-    .container-s9{
+@media (max-width: 1320px) {
+    .container-s9 {
         display: block;
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
@@ -806,6 +811,7 @@ progress {
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y)
 }
+
 .row-sponsori>* {
     flex-shrink: 0;
     max-width: 100%;
@@ -813,6 +819,7 @@ progress {
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y)
 }
+
 .row-heading {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
@@ -822,9 +829,12 @@ progress {
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x))
 }
-.row-heading > .col-lg-5 {
-    flex-grow: 1; /* Allow this column to grow and take up available space */
+
+.row-heading>.col-lg-5 {
+    flex-grow: 1;
+    /* Allow this column to grow and take up available space */
 }
+
 .row-heading>* {
     flex-shrink: 0;
     width: 100%;
@@ -1482,8 +1492,8 @@ progress {
     }
 }
 
-@media (min-width: 1320px){
-    .col-lg-17{
+@media (min-width: 1320px) {
+    .col-lg-17 {
         flex: 0 0 auto;
         display: none;
     }
@@ -1623,13 +1633,14 @@ progress {
         width: 100%
     }
 
-    @media (max-width: 1320px){
+    @media (max-width: 1320px) {
         .col-lg-15 {
             flex: 0 0 auto;
             display: block;
             width: 100%;
             height: 100%
         }
+
         .col-lg-16,
         .col-lg-13,
         .col-lg-14 {
@@ -4545,19 +4556,21 @@ fieldset:disabled .btn {
     align-items: center
 }
 
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+@media (max-width: 768px) {
+
+    /* Adjust the breakpoint as needed */
     .navbar-collapse {
         max-height: 85vh;
         overflow-y: auto;
         background-image: linear-gradient(0deg, #ffc309 0%, #fdde7f 100%);
     }
 
-    .navbar-collapse-blue{
+    .navbar-collapse-blue {
         max-height: 85vh;
         overflow-y: auto;
         background-image: linear-gradient(15deg, #007bff 0%, #c1d2e3 100%) !important;
     }
-  }
+}
 
 .navbar-toggler {
     padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
@@ -8744,7 +8757,7 @@ fieldset:disabled .btn {
     .mx-6 {
         margin-left: auto !important
     }
-  }
+}
 
 .mx-7 {
     /* margin-right: auto; */
@@ -8825,6 +8838,7 @@ fieldset:disabled .btn {
 .mt-5 {
     margin-top: 3rem !important
 }
+
 .mt-6 {
     margin-top: 6rem !important
 }
@@ -9311,14 +9325,18 @@ fieldset:disabled .btn {
 .text-white-stroked {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
-    text-shadow: 
-    1px 1px 0 black,  /* Bottom-right */
-   -1px 1px 0 black,  /* Bottom-left */
-    1px -1px 0 black, /* Top-right */
-   -1px -1px 0 black; /* Top-left */
+    text-shadow:
+        1px 1px 0 black,
+        /* Bottom-right */
+        -1px 1px 0 black,
+        /* Bottom-left */
+        1px -1px 0 black,
+        /* Top-right */
+        -1px -1px 0 black;
+    /* Top-left */
 }
 
-.text-white div{
+.text-white div {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important
 }
