@@ -1093,8 +1093,8 @@ body.subpage-blue .custom-block-image-news {
 }
 
 .custom-block-gif-image {
-  margin-top: -10px;
-  width: 50%;
+  margin-top: 20px;
+  width: 40%;
   z-index: 2;
   display: flex;
   flex-direction: column;
