@@ -23,11 +23,11 @@
   --border-color: #7fffd4;
   --link-hover-color: #100f0f;
   --location: #100f0f;
-  --custom-btn-s-color: #2D2D2D;
+  --custom-btn-s-color: #2d2d2d;
   --custom-btn-s-hover-color: #555555;
 
-  --body-font-family: 'Open Sans', sans-serif;
-  --title-font-family: 'Montserrat', sans-serif;
+  --body-font-family: "Open Sans", sans-serif;
+  --title-font-family: "Montserrat", sans-serif;
 
   --h1-font-size: 58px;
   --h2-font-size: 46px;
@@ -68,7 +68,7 @@
   --border-color: #333333;
   --link-hover-color: #f7cd50;
   --location: #b0b0b0;
-  --custom-btn-s-color: #2D2D2D;
+  --custom-btn-s-color: #2d2d2d;
   --custom-btn-s-hover-color: #555555;
 }
 
@@ -116,7 +116,7 @@
 
 [data-theme="dark"] .navbar .dropdown-menu {
   background-color: #2d2d2d !important;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .5);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="dark"] .navbar .dropdown-menu::before {
@@ -143,7 +143,7 @@
 }
 
 [data-theme="dark"] .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .5) !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5) !important;
 }
 
 [data-theme="dark"] p,
@@ -175,19 +175,26 @@
   box-shadow: 0 0 0 0.25rem rgba(247, 205, 80, 0.25);
 }
 
-[data-theme="dark"] .form-floating>label {
+[data-theme="dark"] .form-floating > label {
   color: #888888;
 }
 
-[data-theme="dark"] .form-floating>.form-control:focus~label,
-[data-theme="dark"] .form-floating>.form-control:not(:placeholder-shown)~label {
+[data-theme="dark"] .form-floating > .form-control:focus ~ label,
+[data-theme="dark"]
+  .form-floating
+  > .form-control:not(:placeholder-shown)
+  ~ label {
   color: var(--primary-color);
 }
 
 /* Dark mode navbar and hero section */
 [data-theme="dark"] .sticky-wrapper,
 [data-theme="dark"] .sticky-wrapper.is-sticky .navbar {
-  background-image: linear-gradient(180deg, #664400 0%, #4d3300 100%) !important;
+  background-image: linear-gradient(
+    180deg,
+    #664400 0%,
+    #4d3300 100%
+  ) !important;
 }
 
 [data-theme="dark"] .hero-section {
@@ -278,7 +285,11 @@
 }
 
 [data-theme="dark"] .subpage-blue .navbar {
-  background-image: linear-gradient(180deg, #2d4a7c 0%, #1a2a4d 100%) !important;
+  background-image: linear-gradient(
+    180deg,
+    #2d4a7c 0%,
+    #1a2a4d 100%
+  ) !important;
 }
 
 [data-theme="dark"] .subpage-blue .site-footer {
@@ -293,14 +304,18 @@
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 /* Smooth transitions for theme changes */
 * {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -390,7 +405,6 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-
 /*---------------------------------------
   SECTION               
 -----------------------------------------*/
@@ -432,7 +446,7 @@ strong {
   opacity: 0.85;
 }
 
-.section-overlay+.container {
+.section-overlay + .container {
   position: relative;
 }
 
@@ -485,14 +499,12 @@ strong {
   color: var(--primary-color);
 }
 
-
 /*---------------------------------------
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .custom-icon {
   color: var(--secondary-color);
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -568,7 +580,6 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   SITE HEADER              
 -----------------------------------------*/
@@ -620,7 +631,7 @@ strong {
   z-index: 1;
 }
 
-.breadcrumb-item+.breadcrumb-item::before,
+.breadcrumb-item + .breadcrumb-item::before,
 .breadcrumb-item a:hover,
 .breadcrumb-item.active {
   color: var(--white-color);
@@ -634,7 +645,6 @@ strong {
 .site-header .custom-icon:hover {
   color: var(--secondary-color);
 }
-
 
 /*---------------------------------------
   NAVIGATION              
@@ -670,9 +680,8 @@ strong {
 }
 
 .sticky-wrapper-unire.is-sticky .navbar {
-  background-image: linear-gradient(90deg, blue, yellow, red)
+  background-image: linear-gradient(90deg, blue, yellow, red);
 }
-
 
 .navbar {
   background: transparent;
@@ -716,7 +725,7 @@ strong {
 
 .navbar .dropdown-menu {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   border: 0;
   display: none;
   opacity: 0;
@@ -798,7 +807,7 @@ strong {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -875,9 +884,16 @@ strong {
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-  transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition:
+    top 300ms 50ms ease,
+    -webkit-transform 300ms 350ms ease;
+  transition:
+    top 300ms 50ms ease,
+    transform 300ms 350ms ease;
+  transition:
+    top 300ms 50ms ease,
+    transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
@@ -900,16 +916,23 @@ strong {
 
 .navbar-toggler .navbar-toggler-icon:before,
 .navbar-toggler .navbar-toggler-icon:after {
-  transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition:
+    top 300ms 350ms ease,
+    -webkit-transform 300ms 50ms ease;
+  transition:
+    top 300ms 350ms ease,
+    transform 300ms 50ms ease;
+  transition:
+    top 300ms 350ms ease,
+    transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
   background: var(--white-color);
   width: 30px;
   height: 2px;
-  content: '';
+  content: "";
 }
 
 .navbar-toggler .navbar-toggler-icon::before {
@@ -957,7 +980,6 @@ strong {
   max-width: 150px;
 }
 
-
 /*---------------------------------------
   TOPICS              
 -----------------------------------------*/
@@ -975,7 +997,6 @@ strong {
 }
 
 .featured-section .row {
-
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -1063,7 +1084,7 @@ strong {
   transform: translateY(-3px);
 }
 
-.custom-block>a {
+.custom-block > a {
   width: 100%;
 }
 
@@ -1082,8 +1103,6 @@ strong {
   object-fit: scale-down;
   margin-top: 20px;
 }
-
-
 
 .custom-block-image-news {
   display: block;
@@ -1237,7 +1256,7 @@ body.subpage-blue .custom-block-image-news {
   padding: 0;
 }
 
-.custom-block-overlay>a {
+.custom-block-overlay > a {
   height: 100%;
 }
 
@@ -1299,7 +1318,6 @@ body.subpage-blue .custom-block-image-news {
     margin-right: auto;
     border-radius: 30px 30px 30px 30px;
   }
-
 }
 
 /*
@@ -1381,7 +1399,6 @@ blockquote {
   width: 200px;
 }
 
-
 /*---------------------------------------
   PAGINATION              
 -----------------------------------------*/
@@ -1415,18 +1432,17 @@ blockquote {
   border-radius: var(--border-radius-small);
 }
 
-.active>.page-link,
+.active > .page-link,
 .page-link.active {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
 
-
 /*---------------------------------------
   TIMELINE              
 -----------------------------------------*/
 .timeline-section {
-  background-image: url('../Poze/Galerie/1.jpg');
+  background-image: url("../Poze/Galerie/1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1457,7 +1473,6 @@ blockquote {
   background-color: var(--secondary-color);
   width: 100%;
 }
-
 
 .timeline-container .vertical-scrollable-timeline li {
   position: relative;
@@ -1497,7 +1512,6 @@ blockquote {
   }
 }
 
-
 .timeline-container .vertical-scrollable-timeline li .icon-holder::before {
   content: "";
   width: 80px;
@@ -1529,10 +1543,12 @@ blockquote {
   background-color: var(--primary-color);
 }
 
-.timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
+.timeline-container
+  .vertical-scrollable-timeline
+  li.active
+  .icon-holder::before {
   background-color: var(--primary-color);
 }
-
 
 /*---------------------------------------
   ALUMNI, VOLUNTARI & LEADERS              
@@ -1569,7 +1585,6 @@ blockquote {
   border-radius: var(--border-radius-medium);
 }
 
-
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
@@ -1586,11 +1601,10 @@ blockquote {
   filter: grayscale(0) invert(0) hue-rotate(0) opacity(1);
 }
 
-.contact-form .form-floating>textarea {
+.contact-form .form-floating > textarea {
   border-radius: var(--border-radius-medium);
   height: 150px;
 }
-
 
 /*---------------------------------------
   SUBSCRIBE FORM               
@@ -1602,7 +1616,6 @@ blockquote {
 .subscribe-form {
   width: 95%;
 }
-
 
 /*---------------------------------------
   CUSTOM FORM               
@@ -1617,7 +1630,7 @@ blockquote {
   outline: none;
 }
 
-.form-floating>label {
+.form-floating > label {
   padding-left: 20px;
 }
 
@@ -1638,7 +1651,6 @@ blockquote {
   background: #3a3a3a;
   border-color: transparent;
 }
-
 
 /*---------------------------------------
   TOAST NOTIFICATION               
@@ -1672,7 +1684,6 @@ blockquote {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
   border: 1px solid var(--border-color);
 }
-
 
 /*---------------------------------------
   SITE FOOTER              
@@ -1781,7 +1792,9 @@ blockquote {
   width: 35px;
   height: 35px;
   line-height: 36px;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .social-icon-link:hover {
@@ -1811,7 +1824,9 @@ blockquote {
   width: 35px;
   height: 35px;
   line-height: 36px;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .social-icon-link-membri:hover {
@@ -1914,7 +1929,7 @@ blockquote {
     width: auto;
   }
 
-  .custom-block-topics-listing>.d-flex,
+  .custom-block-topics-listing > .d-flex,
   .custom-block-topics-listing-info,
   .custom-block-topics-listing a {
     width: auto;
@@ -2016,14 +2031,11 @@ blockquote {
   border-radius: 30px;
 }
 
-
 /*------------ For small screens------------*/
 
 @media only screen and (max-width: 768px) {
-
   .box-area {
     margin: 0 10px;
-
   }
 
   .left-box {
@@ -2034,5 +2046,4 @@ blockquote {
   .right-box {
     padding: 20px;
   }
-
 }

@@ -1,248 +1,396 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="Official website of FTC Team 19101, Tech-X from Dragoș Vodă National College">
-    <meta name="author" content="Media&ProgrammingTeam">
+    <meta
+      name="description"
+      content="Official website of FTC Team 19101, Tech-X from Dragoș Vodă National College"
+    />
+    <meta name="author" content="Media&ProgrammingTeam" />
 
     <title>Sighet 700 | Tech-X #19101</title>
 
     <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="/Css/bootstrap.css" rel="stylesheet">
+    <link href="/Css/bootstrap.css" rel="stylesheet" />
 
-    <link href="/Css/bootstrap-icons.css" rel="stylesheet">
+    <link href="/Css/bootstrap-icons.css" rel="stylesheet" />
 
-    <link href="/Css/templatemo-topic-listing.css" rel="stylesheet">
+    <link href="/Css/templatemo-topic-listing.css" rel="stylesheet" />
     <!--ICONS-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/Favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/Favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/Favicon/favicon-16x16.png" />
-    
-<link rel="icon" type="image/x-icon" href="/Favicon/favicon.ico" sizes="any" />
-<link rel="shortcut icon" href="/Favicon/favicon.ico" />
-<link rel="manifest" href="/Favicon/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Favicon/favicon-16x16.png"
+    />
 
-</head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Favicon/favicon.ico"
+      sizes="any"
+    />
+    <link rel="shortcut icon" href="/Favicon/favicon.ico" />
+    <link rel="manifest" href="/Favicon/site.webmanifest" />
+  </head>
 
-<body class="topics-listing-page" id="top">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <body class="topics-listing-page" id="top">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <main>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="https://tech-x.ro/">
+            <i class="bi-back"></i>
+            <span>Tech-X</span>
+          </a>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="https://tech-x.ro/">
-                    <i class="bi-back"></i>
-                    <span>Tech-X</span>
-                </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-lg-5 me-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="https://tech-x.ro/"
+                  >Acasă</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="/Presa/presa-pag7"
+                  >Apariții în presă</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle"
+                  type="button"
+                  id="dropdownSeasons"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  role="button"
+                >
+                  Sezoane
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="https://tech-x.ro/">Acasă</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="/Presa/presa-pag7">Apariții în presă</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <button class="nav-link dropdown-toggle" type="button" id="dropdownSeasons"
-                                data-bs-toggle="dropdown" aria-expanded="false" role="button">
-                                Sezoane
-                            </button>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/Sezon10/sezon10">Sezonul #10 (2025-2026)</a></li>
-                                <li><a class="dropdown-item" href="/Sezon9/sezon9">Sezonul #9 (2024-2025)</a></li>
-                                <li><a class="dropdown-item" href="/Sezon8/sezon8">Sezonul #8 (2023-2024)</a></li>
-                                <li><a class="dropdown-item" href="/Sezon7/sezon7">Sezonul #7 (2022-2023)</a></li>
-                                <li><a class="dropdown-item" href="/Sezon6/sezon6">Sezonul #6 (2021-2022)</a></li>
-                                <li><a class="dropdown-item" href="/Sezon5/sezon5">Sezonul #5 (2020-2021)</a></li>
-                                <li><a class="dropdown-item" href="/Sezon4/sezon4">Sezonul #4 (2019-2020)</a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-        <header class="site-header d-flex flex-column justify-content-center align-items-center">
-            <div class="container" style="max-width: 2000px;">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="https://tech-x.ro/">Acasă</a></li>
-
-                                <li class="breadcrumb-item active" aria-current="page">Sighet 700</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-12">
-                        <h2>SIGHET 700</h2>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <h1 class="text-center">Sighet 700</h1>
-                </div>
-                <!--Prima Postare-->
-                <div style="align-self: center;">
-                    <div style="justify-content: center; margin: auto; display: flex;">
-                        <img src="Images/sighet700-1.jpeg" style="width: 75%;">
-                    </div>
-                    <div
-                        style="justify-content: center;margin: auto; display: flex;  padding-top: 30px; padding-left: 10px; padding-right: 10px;">
-                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                            Anul acesta orașul nostru împlinește o frumoasă vârstă de la prima atestare documentară.
-                            Dacă pentru Hust, Visk, Teceu și Câmpulung lucrurile au fost clare de la bun început, pentru
-                            cel mai estic târg de coroană de pe
-                            Tisa superioară, lucrurile n-au stat tocmai așa. Cel mai vechi document care atestă Sighetul
-                            este din anul 1326 și are o poveste interesantă. Citiți în continuare,
-                            <a
-                                href="https://www.salutsighet.ro/sighet-700-autori-marius-voinaghi-alin-pralea/?fbclid=IwY2xjawPZk8RleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEemoN9TwU-wyVPVwHKVh5I8bcLvbVARHiNq6ANy6yjDIqOFd-M63fmI9vczlE_aem_UrVao5rpcnBSlCeyiA9Omw">citeste
-                                mai departe</a>
-
-
-                        </p>
-
-                    </div>
-                </div>
-                <!--A doua Postare-->
-                <div style="align-self: center;">
-                    <div style="justify-content: center; margin: auto; display: flex;">
-                        <img src="Images/sighet700-2.jpg" style="width: 75%;">
-                    </div>
-                    <div
-                        style="justify-content: center;margin: auto; display: flex;  padding-top: 30px; padding-left: 10px; padding-right: 10px;">
-                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                            Scriam, în prima parte a articolului, că, de la prima atestare documentară, orașul nostru
-                            împlinește anul acesta o frumoasă vârstă. Până la identificarea în arhive a unui nou
-                            document datat mai devreme de 1326, noi ne continuăm periplul prin Sighet și prin programul
-                            aniversărilor.
-                            <a
-                                href="https://www.salutsighet.ro/sighet-700-partea-ii-popa-lupu-si-infrangerea-tatarilor-la-stramtura-autori-marius-voinaghi-alin-pralea/">citeste
-                                mai departe</a>
-
-                        </p>
-
-                    </div>
-                </div>
-                <!--A treia Postare-->
-                <div style="align-self: center;">
-                    <div style="justify-content: center; margin: auto; display: flex;">
-                        <img src="Images/sighet700-3.jpg" style="width: 75%;">
-                    </div>
-                    <div
-                        style="justify-content: center;margin: auto; display: flex;  padding-top: 30px; padding-left: 10px; padding-right: 10px;">
-                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                            Szilágyi István (1819–1897) a fost profesor, filolog și istoric, membru corespondent al
-                            Academiei Maghiare de Științe. S-a născut la Nagykálló și a studiat la Colegiul Reformat din
-                            Debrețin, unde și-a început și cariera didactică.
-                            <a
-                                href="https://www.salutsighet.ro/sighet-700-iii-szilagyi-istvan-si-ioan-mihalyi-de-apsa-doi-istorici-doi-academicieni-un-singur-bust-autori-marius-voinaghi-alin-pralea/">citeste
-                                mai departe</a>
-
-                        </p>
-
-                    </div>
-                </div>
-        </header>
+                <ul
+                  class="dropdown-menu dropdown-menu-light"
+                  aria-labelledby="navbarLightDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="/Sezon10/sezon10"
+                      >Sezonul #10 (2025-2026)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Sezon9/sezon9"
+                      >Sezonul #9 (2024-2025)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Sezon8/sezon8"
+                      >Sezonul #8 (2023-2024)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Sezon7/sezon7"
+                      >Sezonul #7 (2022-2023)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Sezon6/sezon6"
+                      >Sezonul #6 (2021-2022)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Sezon5/sezon5"
+                      >Sezonul #5 (2020-2021)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/Sezon4/sezon4"
+                      >Sezonul #4 (2019-2020)</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        </section>
-    </main>
-    <footer class="site-footer section-padding">
-        <div class="container">
-            <div class="row text-center">
+      </nav>
+      <header
+        class="site-header d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="container" style="max-width: 2000px">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="https://tech-x.ro/">Acasă</a>
+                  </li>
+
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Sighet 700
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-12">
+              <h2>SIGHET 700</h2>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <h1 class="text-center">Sighet 700</h1>
+          </div>
+          <!--Prima Postare-->
+          <div style="align-self: center">
+            <div style="justify-content: center; margin: auto; display: flex">
+              <img src="Images/sighet700-1.jpeg" style="width: 75%" />
+            </div>
+            <div
+              style="
+                justify-content: center;
+                margin: auto;
+                display: flex;
+                padding-top: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+            >
+              <p
+                style="
+                  font-family:
+                    &quot;Franklin Gothic Medium&quot;,
+                    &quot;Arial Narrow&quot;, Arial, sans-serif;
+                "
+              >
+                Anul acesta orașul nostru împlinește o frumoasă vârstă de la
+                prima atestare documentară. Dacă pentru Hust, Visk, Teceu și
+                Câmpulung lucrurile au fost clare de la bun început, pentru cel
+                mai estic târg de coroană de pe Tisa superioară, lucrurile n-au
+                stat tocmai așa. Cel mai vechi document care atestă Sighetul
+                este din anul 1326 și are o poveste interesantă. Citiți în
+                continuare,
+                <a
+                  href="https://www.salutsighet.ro/sighet-700-autori-marius-voinaghi-alin-pralea/?fbclid=IwY2xjawPZk8RleHRuA2FlbQIxMQBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEemoN9TwU-wyVPVwHKVh5I8bcLvbVARHiNq6ANy6yjDIqOFd-M63fmI9vczlE_aem_UrVao5rpcnBSlCeyiA9Omw"
+                  >citeste mai departe</a
+                >
+              </p>
+            </div>
+          </div>
+          <!--A doua Postare-->
+          <div style="align-self: center">
+            <div style="justify-content: center; margin: auto; display: flex">
+              <img src="Images/sighet700-2.jpg" style="width: 75%" />
+            </div>
+            <div
+              style="
+                justify-content: center;
+                margin: auto;
+                display: flex;
+                padding-top: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+            >
+              <p
+                style="
+                  font-family:
+                    &quot;Franklin Gothic Medium&quot;,
+                    &quot;Arial Narrow&quot;, Arial, sans-serif;
+                "
+              >
+                Scriam, în prima parte a articolului, că, de la prima atestare
+                documentară, orașul nostru împlinește anul acesta o frumoasă
+                vârstă. Până la identificarea în arhive a unui nou document
+                datat mai devreme de 1326, noi ne continuăm periplul prin Sighet
+                și prin programul aniversărilor.
+                <a
+                  href="https://www.salutsighet.ro/sighet-700-partea-ii-popa-lupu-si-infrangerea-tatarilor-la-stramtura-autori-marius-voinaghi-alin-pralea/"
+                  >citeste mai departe</a
+                >
+              </p>
+            </div>
+          </div>
+          <!--A treia Postare-->
+          <div style="align-self: center">
+            <div style="justify-content: center; margin: auto; display: flex">
+              <img src="Images/sighet700-3.jpg" style="width: 75%" />
+            </div>
+            <div
+              style="
+                justify-content: center;
+                margin: auto;
+                display: flex;
+                padding-top: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+              "
+            >
+              <p
+                style="
+                  font-family:
+                    &quot;Franklin Gothic Medium&quot;,
+                    &quot;Arial Narrow&quot;, Arial, sans-serif;
+                "
+              >
+                Szilágyi István (1819–1897) a fost profesor, filolog și istoric,
+                membru corespondent al Academiei Maghiare de Științe. S-a născut
+                la Nagykálló și a studiat la Colegiul Reformat din Debrețin,
+                unde și-a început și cariera didactică.
+                <a
+                  href="https://www.salutsighet.ro/sighet-700-iii-szilagyi-istvan-si-ioan-mihalyi-de-apsa-doi-istorici-doi-academicieni-un-singur-bust-autori-marius-voinaghi-alin-pralea/"
+                  >citeste mai departe</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <footer class="site-footer section-padding">
+            <div class="container">
+              <div class="row text-center">
                 <div class="col-lg-3 col-md-6 col-6">
-                    <h6 class="site-footer-title mb-3">Adresa</h6>
-                    <ul class="site-footer-links">
-                        <p>
-                        <p>Strada Mihai Viteazu 14 <br> Sighetu Marmației <br> 435500</p>
-                        </p>
-                    </ul>
+                  <h6 class="site-footer-title mb-3">Adresa</h6>
+                  <ul class="site-footer-links">
+                    <p>
+                      Strada Mihai Viteazu 14 <br />
+                      Sighetu Marmației <br />
+                      435500
+                    </p>
+                  </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-6">
-                    <h6 class="site-footer-title mb-3">Resurse utile</h6>
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="https://natieprineducatie.ro/wp-content/uploads/2018/06/REGULAMENT_V1_1.06.pdf"
-                                class="site-footer-link">Regulament Nație prin Educație</a>
-                        </li>
-                        <li class="site-footer-link-item">
-                            <!-- See links.js to change manual when needed -->
-                            <a id="CompManual" href="#" class="site-footer-link">Competition Manual x</a>
-                        </li>
-                        <li class="site-footer-link-item">
-                            <a href="mailto:techx.cndv2021@gmail.com" class="site-footer-link">
-                                techx.cndv2021@gmail.com
-                            </a>
-                        </li>
-                    </ul>
+                  <h6 class="site-footer-title mb-3">Resurse utile</h6>
+                  <ul class="site-footer-links">
+                    <li class="site-footer-link-item">
+                      <a
+                        href="https://natieprineducatie.ro/wp-content/uploads/2018/06/REGULAMENT_V1_1.06.pdf"
+                        class="site-footer-link"
+                        >Regulament Nație prin Educație</a
+                      >
+                    </li>
+                    <li class="site-footer-link-item">
+                      <!-- See links.js to change manual when needed -->
+                      <a id="CompManual" href="#" class="site-footer-link"
+                        >Competition Manual x</a
+                      >
+                    </li>
+                    <li class="site-footer-link-item">
+                      <a
+                        href="mailto:techx.cndv2021@gmail.com"
+                        class="site-footer-link"
+                      >
+                        techx.cndv2021@gmail.com
+                      </a>
+                    </li>
+                  </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
-                    <script
-                        type="text/javascript"> //<![CDATA[
-                            var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
-                            document.write(unescape("%3Cscript src='" + tlJsHost + "trustLogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));//]]></script>
-                    <script language="JavaScript" type="text/javascript">
-                        TrustLogo("https://www.positivessl.com/Images/seals/positivessl_trust_seal_lg_222x54.png", "POSDV", "none");
-                    </script>
+                  <script type="text/javascript">
+                    //<![CDATA[
+                    var tlJsHost =
+                      window.location.protocol == "https:"
+                        ? "https://secure.trust-provider.com/"
+                        : "http://www.trustlogo.com/";
+                    document.write(
+                      unescape(
+                        "%3Cscript src='" +
+                          tlJsHost +
+                          "trustLogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E",
+                      ),
+                    ); //]]>
+                  </script>
+                  <script language="JavaScript" type="text/javascript">
+                    TrustLogo(
+                      "https://www.positivessl.com/Images/seals/positivessl_trust_seal_lg_222x54.png",
+                      "POSDV",
+                      "none",
+                    );
+                  </script>
                 </div>
 
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
-                    <h6 class="copyright-text mb-3">Contact</h6>
+                  <h6 class="copyright-text mb-3">Contact</h6>
+                  <ul>
                     <li class="social-icon-item">
-                        <a href="https://www.instagram.com/tech_x.cndv"
-                            class="social-icon-link-membri bi-instagram"></a>
+                      <a
+                        href="https://www.instagram.com/tech_x.cndv"
+                        class="social-icon-link-membri bi-instagram"
+                      ></a>
                     </li>
                     <li class="social-icon-item">
-                        <a href="https://github.com/Tech-X-CNDV" class="social-icon-link-membri bi-github"></a>
+                      <a
+                        href="https://github.com/Tech-X-CNDV"
+                        class="social-icon-link-membri bi-github"
+                      ></a>
                     </li>
                     <li class="social-icon-item">
-                        <a href="https://www.facebook.com/techx.cndv" class="social-icon-link-membri bi-facebook"></a>
+                      <a
+                        href="https://www.facebook.com/techx.cndv"
+                        class="social-icon-link-membri bi-facebook"
+                      ></a>
                     </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-        </div>
-    </footer>
-    <!--COPYRIGHT BAND-->
-    <div class="container">
-        <div class="row">
-            <div class="mb-4">
-                <p class="copyright-text mt-lg-3 mt-4 text-center">Copyright © 2025 Tech-X. Toate drepturile rezervate.
+          </footer>
+          <!--COPYRIGHT BAND-->
+          <div class="container">
+            <div class="row">
+              <div class="mb-4">
+                <p class="copyright-text mt-lg-3 mt-4 text-center">
+                  Copyright © 2025 Tech-X. Toate drepturile rezervate.
                 </p>
+              </div>
             </div>
+          </div>
+
+          <!-- JAVASCRIPT FILES -->
+          <script src="/Js/jquery.js"></script>
+          <script src="/Js/bootstrap.bundle.js"></script>
+          <script src="/Js/jquery.sticky.js"></script>
+          <script src="/Js/click-scroll.js"></script>
+          <script src="/Js/custom.js"></script>
+          <script src="/Js/links.js"></script>
         </div>
-    </div>
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="/Js/jquery.js"></script>
-    <script src="/Js/bootstrap.bundle.js"></script>
-    <script src="/Js/jquery.sticky.js"></script>
-    <script src="/Js/click-scroll.js"></script>
-    <script src="/Js/custom.js"></script>
-    <script src="/Js/links.js"></script>
-
-</body>
-
+      </header>
+    </main>
+  </body>
 </html>

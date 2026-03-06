@@ -1,103 +1,108 @@
 .animation-wrapper {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden; /* Hides any content that goes outside this box */
-  }
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Hides any content that goes outside this box */
+}
 
 .tumbleweed {
-    position: fixed;
-    bottom: 0; /* Adjust vertical position */
-    left: -200px; /* Start off-screen to the left */
-    width: 150px; /* Adjust size of the image */
-    height: auto;
-    animation: roll-bounce-move-right 5s linear infinite;
-  }
-  .tumbleweed2 {
-    position: fixed;
-    bottom: 0; /* Adjust vertical position */
-    left: -200px; /* Start off-screen to the left */
-    width: 150px; /* Adjust size of the image */
-    height: auto;
-    animation: roll-bounce-move-right 4.5s linear infinite;
-  }
+  position: fixed;
+  bottom: 0; /* Adjust vertical position */
+  left: -200px; /* Start off-screen to the left */
+  width: 150px; /* Adjust size of the image */
+  height: auto;
+  animation: roll-bounce-move-right 5s linear infinite;
+}
+.tumbleweed2 {
+  position: fixed;
+  bottom: 0; /* Adjust vertical position */
+  left: -200px; /* Start off-screen to the left */
+  width: 150px; /* Adjust size of the image */
+  height: auto;
+  animation: roll-bounce-move-right 4.5s linear infinite;
+}
 .tumbleweed3 {
-    position: fixed;
-    bottom: 0; /* Adjust vertical position */
-    left: -200px; /* Start off-screen to the left */
-    width: 150px; /* Adjust size of the image */
-    height: auto;
-    animation: roll-bounce-move-right 5.5s linear infinite;
-  }
+  position: fixed;
+  bottom: 0; /* Adjust vertical position */
+  left: -200px; /* Start off-screen to the left */
+  width: 150px; /* Adjust size of the image */
+  height: auto;
+  animation: roll-bounce-move-right 5.5s linear infinite;
+}
 .tumbleweed4 {
-    position: fixed;
-    bottom: 0; /* Adjust vertical position */
-    left: calc(100vw + 200px); /* Start off-screen to the right */
-    width: 150px; /* Adjust size of the image */
-    height: auto;
-    animation: roll-bounce-move-left 6s linear infinite alternate;
-  }
+  position: fixed;
+  bottom: 0; /* Adjust vertical position */
+  left: calc(100vw + 200px); /* Start off-screen to the right */
+  width: 150px; /* Adjust size of the image */
+  height: auto;
+  animation: roll-bounce-move-left 6s linear infinite alternate;
+}
 .tumbleweed5 {
-    position: fixed;
-    bottom: 0; /* Adjust vertical position */
-    left: calc(100vw + 200px); /* Start off-screen to the right */
-    width: 150px; /* Adjust size of the image */
-    height: auto;
-    animation: roll-bounce-move-left 6.5s linear infinite alternate;
-  }
+  position: fixed;
+  bottom: 0; /* Adjust vertical position */
+  left: calc(100vw + 200px); /* Start off-screen to the right */
+  width: 150px; /* Adjust size of the image */
+  height: auto;
+  animation: roll-bounce-move-left 6.5s linear infinite alternate;
+}
 
 @keyframes roll-bounce-move-right {
-    0% {
-      /* Starting position and rotation */
-      transform: translateX(0) translateY(0) rotate(0deg);
-    }
-    15% {
-      /* First bounce up */
-      transform: translateX(calc(100vw * 0.15 + 30px)) translateY(-40px) rotate(540deg);
-    }
-    30% {
-      /* Down on the ground */
-      transform: translateX(calc(100vw * 0.3)) translateY(0) rotate(1080deg);
-    }
-    45% {
-      /* Second bounce up */
-      transform: translateX(calc(100vw * 0.45 + 50px)) translateY(-60px) rotate(1620deg);
-    }
-    60% {
-      /* Down on the ground */
-      transform: translateX(calc(100vw * 0.6)) translateY(0) rotate(2160deg);
-    }
-    75% {
-      /* Third bounce up */
-      transform: translateX(calc(100vw * 0.75 + 20px)) translateY(-30px) rotate(2700deg);
-    }
-    100% {
-      /* Ending position, off-screen */
-      transform: translateX(calc(100vw + 200px)) translateY(0) rotate(3600deg);
-    }
+  0% {
+    /* Starting position and rotation */
+    transform: translateX(0) translateY(0) rotate(0deg);
   }
+  15% {
+    /* First bounce up */
+    transform: translateX(calc(100vw * 0.15 + 30px)) translateY(-40px)
+      rotate(540deg);
+  }
+  30% {
+    /* Down on the ground */
+    transform: translateX(calc(100vw * 0.3)) translateY(0) rotate(1080deg);
+  }
+  45% {
+    /* Second bounce up */
+    transform: translateX(calc(100vw * 0.45 + 50px)) translateY(-60px)
+      rotate(1620deg);
+  }
+  60% {
+    /* Down on the ground */
+    transform: translateX(calc(100vw * 0.6)) translateY(0) rotate(2160deg);
+  }
+  75% {
+    /* Third bounce up */
+    transform: translateX(calc(100vw * 0.75 + 20px)) translateY(-30px)
+      rotate(2700deg);
+  }
+  100% {
+    /* Ending position, off-screen */
+    transform: translateX(calc(100vw + 200px)) translateY(0) rotate(3600deg);
+  }
+}
 
-  /* If reverse animation is needed */
-  /* Keyframes for a tumbleweed moving from right to left */
-  @keyframes roll-bounce-move-left {
-    0% {
-      transform: translateX(0) translateY(0) rotate(0deg);
-    }
-    15% {
-      transform: translateX(calc(-100vw * 0.15)) translateY(-40px) rotate(-540deg);
-    }
-    30% {
-      transform: translateX(calc(-100vw * 0.3)) translateY(0) rotate(-1080deg);
-    }
-    45% {
-      transform: translateX(calc(-100vw * 0.45)) translateY(-60px) rotate(-1620deg);
-    }
-    60% {
-      transform: translateX(calc(-100vw * 0.6)) translateY(0) rotate(-2160deg);
-    }
-    75% {
-      transform: translateX(calc(-100vw * 0.75)) translateY(-30px) rotate(-2700deg);
-    }
-    100% {
-      transform: translateX(calc(-100vw - 200px)) translateY(0) rotate(-3600deg);
-    }
+/* If reverse animation is needed */
+/* Keyframes for a tumbleweed moving from right to left */
+@keyframes roll-bounce-move-left {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
   }
+  15% {
+    transform: translateX(calc(-100vw * 0.15)) translateY(-40px) rotate(-540deg);
+  }
+  30% {
+    transform: translateX(calc(-100vw * 0.3)) translateY(0) rotate(-1080deg);
+  }
+  45% {
+    transform: translateX(calc(-100vw * 0.45)) translateY(-60px)
+      rotate(-1620deg);
+  }
+  60% {
+    transform: translateX(calc(-100vw * 0.6)) translateY(0) rotate(-2160deg);
+  }
+  75% {
+    transform: translateX(calc(-100vw * 0.75)) translateY(-30px)
+      rotate(-2700deg);
+  }
+  100% {
+    transform: translateX(calc(-100vw - 200px)) translateY(0) rotate(-3600deg);
+  }
+}

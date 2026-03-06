@@ -15,34 +15,38 @@
   var splice = Array.prototype.splice; // save ref to original slice()
 
   var defaults = {
-    topSpacing: 0,
-    bottomSpacing: 0,
-    className: 'is-sticky',
-    wrapperClassName: 'sticky-wrapper',
-    center: false,
-    getWidthFrom: '',
-    widthFromWrapper: true, // works only when .getWidthFrom is empty
-    responsiveWidth: false
-  },
+      topSpacing: 0,
+      bottomSpacing: 0,
+      className: "is-sticky",
+      wrapperClassName: "sticky-wrapper",
+      center: false,
+      getWidthFrom: "",
+      widthFromWrapper: true, // works only when .getWidthFrom is empty
+      responsiveWidth: false,
+    },
     $window = $(window),
     $document = $(document),
     sticked = [],
     windowHeight = $window.height(),
-    applyWrapperClass = function(s) {
-      if (window.location.pathname.includes('sezon9')) {
-        s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
-        s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
+    applyWrapperClass = function (s) {
+      if (window.location.pathname.includes("sezon9")) {
+        s.stickyWrapper.attr("id", "sticky-wrapper-blue");
+        s.stickyWrapper
+          .removeClass(s.wrapperClassName)
+          .addClass("sticky-wrapper-blue");
       }
-      if (window.location.pathname.includes('mUnire')) {
-        s.stickyWrapper.attr('id', 'sticky-wrapper-unire'); 
-        s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-unire');
+      if (window.location.pathname.includes("mUnire")) {
+        s.stickyWrapper.attr("id", "sticky-wrapper-unire");
+        s.stickyWrapper
+          .removeClass(s.wrapperClassName)
+          .addClass("sticky-wrapper-unire");
       }
     },
     scroller = function () {
       var scrollTop = $window.scrollTop(),
         documentHeight = $document.height(),
         dwh = documentHeight - windowHeight,
-        extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
+        extra = scrollTop > dwh ? dwh - scrollTop : 0;
 
       for (var i = 0; i < sticked.length; i++) {
         var s = sticked[i],
@@ -50,24 +54,27 @@
           etse = elementTop - s.topSpacing - extra;
 
         //update height in case of dynamic content
-        s.stickyWrapper.css('height', s.stickyElement.outerHeight());
+        s.stickyWrapper.css("height", s.stickyElement.outerHeight());
 
         if (scrollTop <= etse) {
           if (s.currentTop !== null) {
-            s.stickyElement
-              .css({
-                'width': '',
-                'position': '',
-                'top': ''
-              });
+            s.stickyElement.css({
+              width: "",
+              position: "",
+              top: "",
+            });
             s.stickyElement.parent().removeClass(s.className);
-            s.stickyElement.trigger('sticky-end', [s]);
+            s.stickyElement.trigger("sticky-end", [s]);
             s.currentTop = null;
           }
-        }
-        else {
-          var newTop = documentHeight - s.stickyElement.outerHeight()
-            - s.topSpacing - s.bottomSpacing - scrollTop - extra;
+        } else {
+          var newTop =
+            documentHeight -
+            s.stickyElement.outerHeight() -
+            s.topSpacing -
+            s.bottomSpacing -
+            scrollTop -
+            extra;
           if (newTop < 0) {
             newTop = newTop + s.topSpacing;
           } else {
@@ -84,35 +91,52 @@
               newWidth = s.stickyElement.width();
             }
             s.stickyElement
-              .css('width', newWidth)
-              .css('position', 'fixed')
-              .css('top', newTop);
+              .css("width", newWidth)
+              .css("position", "fixed")
+              .css("top", newTop);
 
             s.stickyElement.parent().addClass(s.className);
 
-            if (window.location.pathname.includes('sezon9') && newTop !== null) { 
-              s.stickyWrapper.attr('id', 'sticky-wrapper-blue'); 
-              s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-blue');
+            if (
+              window.location.pathname.includes("sezon9") &&
+              newTop !== null
+            ) {
+              s.stickyWrapper.attr("id", "sticky-wrapper-blue");
+              s.stickyWrapper
+                .removeClass(s.wrapperClassName)
+                .addClass("sticky-wrapper-blue");
             }
 
-            if (window.location.pathname.includes('mUnire') && newTop !== null) { 
-              s.stickyWrapper.attr('id', 'sticky-wrapper-unire'); 
-              s.stickyWrapper.removeClass(s.wrapperClassName).addClass('sticky-wrapper-unire');
+            if (
+              window.location.pathname.includes("mUnire") &&
+              newTop !== null
+            ) {
+              s.stickyWrapper.attr("id", "sticky-wrapper-unire");
+              s.stickyWrapper
+                .removeClass(s.wrapperClassName)
+                .addClass("sticky-wrapper-unire");
             }
 
             if (s.currentTop === null) {
-              s.stickyElement.trigger('sticky-start', [s]);
+              s.stickyElement.trigger("sticky-start", [s]);
             } else {
               // sticky is started but it have to be repositioned
-              s.stickyElement.trigger('sticky-update', [s]);
+              s.stickyElement.trigger("sticky-update", [s]);
             }
 
-            if (s.currentTop === s.topSpacing && s.currentTop > newTop || s.currentTop === null && newTop < s.topSpacing) {
+            if (
+              (s.currentTop === s.topSpacing && s.currentTop > newTop) ||
+              (s.currentTop === null && newTop < s.topSpacing)
+            ) {
               // just reached bottom || just started to stick but bottom is already reached
-              s.stickyElement.trigger('sticky-bottom-reached', [s]);
-            } else if (s.currentTop !== null && newTop === s.topSpacing && s.currentTop < newTop) {
+              s.stickyElement.trigger("sticky-bottom-reached", [s]);
+            } else if (
+              s.currentTop !== null &&
+              newTop === s.topSpacing &&
+              s.currentTop < newTop
+            ) {
               // sticky is started && sticked at topSpacing && overflowing from top just finished
-              s.stickyElement.trigger('sticky-bottom-unreached', [s]);
+              s.stickyElement.trigger("sticky-bottom-unreached", [s]);
             }
 
             s.currentTop = newTop;
@@ -134,7 +158,7 @@
           newWidth = s.stickyWrapper.width();
         }
         if (newWidth != null) {
-          s.stickyElement.css('width', newWidth);
+          s.stickyElement.css("width", newWidth);
         }
       }
     },
@@ -144,11 +168,13 @@
         return this.each(function () {
           var stickyElement = $(this);
 
-          var stickyId = stickyElement.attr('id');
+          var stickyId = stickyElement.attr("id");
           var stickyHeight = stickyElement.outerHeight();
-          var wrapperId = stickyId ? stickyId + '-' + defaults.wrapperClassName : defaults.wrapperClassName
-          var wrapper = $('<div></div>')
-            .attr('id', wrapperId)
+          var wrapperId = stickyId
+            ? stickyId + "-" + defaults.wrapperClassName
+            : defaults.wrapperClassName;
+          var wrapper = $("<div></div>")
+            .attr("id", wrapperId)
             .addClass(o.wrapperClassName);
 
           stickyElement.wrapAll(wrapper);
@@ -156,14 +182,21 @@
           var stickyWrapper = stickyElement.parent();
 
           if (o.center) {
-            stickyWrapper.css({ width: stickyElement.outerWidth(), marginLeft: "auto", marginRight: "auto" });
+            stickyWrapper.css({
+              width: stickyElement.outerWidth(),
+              marginLeft: "auto",
+              marginRight: "auto",
+            });
           }
 
           if (stickyElement.css("float") == "right") {
-            stickyElement.css({ "float": "none" }).parent().css({ "float": "right" });
+            stickyElement
+              .css({ float: "none" })
+              .parent()
+              .css({ float: "right" });
           }
 
-          stickyWrapper.css('height', stickyHeight);
+          stickyWrapper.css("height", stickyHeight);
 
           o.stickyElement = stickyElement;
           o.stickyWrapper = stickyWrapper;
@@ -190,45 +223,43 @@
           }
           if (removeIdx != -1) {
             unstickyElement.unwrap();
-            unstickyElement
-              .css({
-                'width': '',
-                'position': '',
-                'top': '',
-                'float': ''
-              })
-              ;
+            unstickyElement.css({
+              width: "",
+              position: "",
+              top: "",
+              float: "",
+            });
           }
         });
-      }
+      },
     };
 
   // should be more efficient than using $window.scroll(scroller) and $window.resize(resizer):
   if (window.addEventListener) {
-    window.addEventListener('scroll', scroller, false);
-    window.addEventListener('resize', resizer, false);
+    window.addEventListener("scroll", scroller, false);
+    window.addEventListener("resize", resizer, false);
   } else if (window.attachEvent) {
-    window.attachEvent('onscroll', scroller);
-    window.attachEvent('onresize', resizer);
+    window.attachEvent("onscroll", scroller);
+    window.attachEvent("onresize", resizer);
   }
 
   $.fn.sticky = function (method) {
     if (methods[method]) {
       return methods[method].apply(this, slice.call(arguments, 1));
-    } else if (typeof method === 'object' || !method) {
+    } else if (typeof method === "object" || !method) {
       return methods.init.apply(this, arguments);
     } else {
-      $.error('Method ' + method + ' does not exist on jQuery.sticky');
+      $.error("Method " + method + " does not exist on jQuery.sticky");
     }
   };
 
   $.fn.unstick = function (method) {
     if (methods[method]) {
       return methods[method].apply(this, slice.call(arguments, 1));
-    } else if (typeof method === 'object' || !method) {
+    } else if (typeof method === "object" || !method) {
       return methods.unstick.apply(this, arguments);
     } else {
-      $.error('Method ' + method + ' does not exist on jQuery.sticky');
+      $.error("Method " + method + " does not exist on jQuery.sticky");
     }
   };
   $(function () {

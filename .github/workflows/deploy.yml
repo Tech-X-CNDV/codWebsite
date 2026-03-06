@@ -5,16 +5,16 @@ on:
     branches:
       - main
     paths-ignore:
-      - '**/*.md'
-      - '.gitignore'
-      - '.gitattributes'
-      - '.vscode/**'
-      - '.agents/**'
-      - '.agent/**'
-      - 'brain/**'
-      - '**/*.ps1'
-      - '**/*.py'
-      - '.local-media-archive/**'
+      - "**/*.md"
+      - ".gitignore"
+      - ".gitattributes"
+      - ".vscode/**"
+      - ".agents/**"
+      - ".agent/**"
+      - "brain/**"
+      - "**/*.ps1"
+      - "**/*.py"
+      - ".local-media-archive/**"
 
 concurrency:
   group: deploy-hostico-${{ github.ref }}
