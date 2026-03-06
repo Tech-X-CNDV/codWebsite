@@ -19,3 +19,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# local archive for large assets removed from git tracking
+.local-media-archive/

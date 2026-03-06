@@ -1,39 +1,70 @@
-name: Deploy to Hostico
+﻿name: Deploy to Hostico
 
 on:
   push:
     branches:
       - main
+    paths-ignore:
+      - '**/*.md'
+      - '.gitignore'
+      - '.gitattributes'
+      - '.vscode/**'
+      - '.agents/**'
+      - '.agent/**'
+      - 'brain/**'
+      - '**/*.ps1'
+      - '**/*.py'
+      - '.local-media-archive/**'
+
+concurrency:
+  group: deploy-hostico-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: "🎉 Deploy"
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
+      - name: "🚚 Get latest code"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          fetch-tags: false
+          persist-credentials: false
 
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: public_html/
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          .vscode/**
-          .agents/**
-          .agent/**
-          brain/**
-          C:\tmp\**
-          /tmp/**
-          *.ps1
-          *.py
-          RANDOM_CODE.txt
-          README.md
-          CONTRIBUTING.md
-          LICENSE
-          package*.json
+      - name: "📂 Sync files"
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: public_html/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .vscode/**
+            .agents/**
+            .agent/**
+            brain/**
+            C:\tmp\**
+            /tmp/**
+            *.ps1
+            *.py
+            RANDOM_CODE.txt
+            README.md
+            CONTRIBUTING.md
+            LICENSE
+            package*.json
+            .local-media-archive/**
+            SRun/Drona.mp4
+            Sezon9/Regionala/6.JPG
+            Docs/PORTFOLIO_S7.pdf
+            Video/Sezon 8/UN NOU PREMIU PENTRU ECHIPA DE ROBOTICA TECH X-(1080p).mp4
+            Docs/NOTEBOOK_S7.pdf
+            Video/Sezon 8/Tech-X Sezon8.mp4
+            Docs/NOTEBOOK_S8.pdf
+            Video/Sezon 8/AWARD_CLUJ_S8.mp4
+            Sezon10/Vivo/Video/2.mp4
+            Sezon10/Vivo/Video/1.mp4
+            Docs/NOTEBOOK_S6.pdf
