@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/limrjsfh/public_html
+    - /bin/cp -R * $DEPLOYPATH
