@@ -24,6 +24,7 @@
         text-align: center;
         max-width: 80%;
       }
+
       .pdf-wrapper {
         width: 100%;
         max-width: 600px;
@@ -54,7 +55,20 @@
       }
     </style>
   </head>
+
   <body>
+    <div
+      class="d-flex justify-content-end p-3"
+      style="position: absolute; top: 0; right: 0; width: 100%"
+    >
+      <button
+        id="theme-toggle"
+        class="navbar-icon"
+        aria-label="Toggle dark mode"
+      >
+        <i class="bi-moon-fill" id="theme-icon"></i>
+      </button>
+    </div>
     <div class="container">
       <h2>Previzualizare Document</h2>
 
