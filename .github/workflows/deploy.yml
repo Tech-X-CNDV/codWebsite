@@ -57,6 +57,8 @@ jobs:
             LICENSE
             package*.json
             .local-media-archive/**
+            Sezon10/Vivo/Video/**
+            Video/**
             SRun/Drona.mp4
             Sezon9/Regionala/6.JPG
             Docs/PORTFOLIO_S7.pdf
