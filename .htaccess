@@ -1,19 +1,10 @@
-# Try to disable MultiViews without crashing the server
-<IfModule mod_negotiation.c>
-    Options -MultiViews
-</IfModule>
-
 RewriteEngine On
 
 # Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# 1. FORCE HTML over Directory (Specific fix for sighet700 etc.)
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^(.*)/?$ $1.html [L]
-
-# 2. Standard Clean URL rule
+# Standard Clean URL rule
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
