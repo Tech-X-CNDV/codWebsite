@@ -3,3 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/limrjsfh/public_html
     - /bin/cp -R * $DEPLOYPATH
+    # The '*' wildcard above skips hidden files, so we copy .htaccess explicitly
+    - /bin/cp .htaccess $DEPLOYPATH
