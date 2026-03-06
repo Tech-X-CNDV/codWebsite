@@ -1,10 +1,8 @@
-Options +FollowSymLinks -MultiViews
 RewriteEngine On
-RewriteBase /
 
 # Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # If the request is not for a real file or directory
 # And adding .html results in a real file, then rewrite
@@ -13,7 +11,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
-# Custom 404 Page (must be a full path or just a filename for root)
+# Custom 404 Page
 ErrorDocument 404 /404.html
 
 <FilesMatch "\.(css|js)$">
