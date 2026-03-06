@@ -1,7 +1,19 @@
 RewriteEngine On
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# If the request is not for a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/?$ $1.html [L]
+# Check if appending .html to the path results in a real file
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+# If yes, rewrite to that .html file
+RewriteRule ^(.+)$ $1.html [L]
+
+# Custom 404 Page
+ErrorDocument 404 /404.html
 
 <FilesMatch "\.(css|js)$">
   FileETag None
