@@ -33,6 +33,30 @@
     <link href="/Css/bootstrap-icons.css" rel="stylesheet" />
 
     <link href="/Css/templatemo-topic-listing.css" rel="stylesheet" />
+    <style>
+      /* RED Medical Center image adjustments: modestly larger and shifted down */
+      #red-medical .custom-block-image-sponsori,
+      #red-medical-img {
+        max-width: 100%;         /* allow full width within container */
+        height: auto;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 25%) scale(1.25);
+        transform-origin: center center;
+      }
+      /* Electro Mat Prompt image positioned higher in square */
+      #electro-mat .custom-block-image-sponsori,
+      #electro-mat-img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -15%) scale(1);
+        transform-origin: center center;
+      }
+    </style>
     <!--ICONS-->
     <link
       rel="apple-touch-icon"
@@ -1510,20 +1534,21 @@
                                   class="custom-block-sponsori bg-white shadow-lg"
                                 >
                                   <a
-                                    href="https://www.facebook.com/p/Besteam-signs-more-100063692642848/"
+                                    href="https://www.facebook.com/www.rgbenergyteam.ro/?locale=ro_RO"
                                     target="_blank"
                                     class="full-link"
                                   ></a>
                                   <div class="d-flex justify-content-center">
                                     <div>
-                                      <h6 class="mb-1 text-center">Besteam</h6>
+                                      <h6 class="mb-1 text-center">
+                                        Electrice RGB
+                                      </h6>
                                     </div>
                                   </div>
                                   <img
-                                    src="/Poze/Logo/BesteamLogo.png"
+                                    src="Poze/Sponsori/Logo_RGB.jpg"
                                     class="custom-block-image-sponsori img-fluid"
-                                    alt=""
-                                    style="border-radius: 30px"
+                                    alt="Placeholder"
                                   />
                                 </div>
                               </div>
@@ -1578,6 +1603,31 @@
                                 </div>
                               </div>
                               <div class="col mb-4">
+                                <div id="electro-mat"
+                                  class="custom-block-sponsori bg-white shadow-lg"
+                                >
+                                  <a
+                                    href="https://www.facebook.com/electromatprompt/?locale=ro_RO"
+                                    target="_blank"
+                                    class="full-link"
+                                  ></a>
+                                  <div class="d-flex justify-content-center">
+                                    <div>
+                                      <h6 class="mb-1 text-center">
+                                        Electro Mat Prompt
+                                      </h6>
+                                    </div>
+                                  </div>
+                                  <img
+                                    id="electro-mat-img"
+                                    src="/Poze/Sponsori/Electro.png"
+                                    class="custom-block-image-sponsori img-fluid"
+                                    alt="Electro Mat Prompt Logo Placeholder"
+                                  />
+
+                                </div>
+                              </div>
+                              <div class="col mb-4">
                                 <div
                                   class="custom-block-sponsori bg-white shadow-lg"
                                 >
@@ -1600,49 +1650,50 @@
                                   />
                                 </div>
                               </div>
+            
                               <div class="col mb-4">
                                 <div
                                   class="custom-block-sponsori bg-white shadow-lg"
                                 >
                                   <a
-                                    href="https://www.facebook.com/electromatprompt/?locale=ro_RO"
+                                    href="https://www.facebook.com/p/Besteam-signs-more-100063692642848/"
                                     target="_blank"
                                     class="full-link"
                                   ></a>
                                   <div class="d-flex justify-content-center">
                                     <div>
-                                      <h6 class="mb-1 text-center">
-                                        Electro Mat Prompt
-                                      </h6>
+                                      <h6 class="mb-1 text-center">Besteam</h6>
                                     </div>
                                   </div>
                                   <img
-                                    src="/Poze/Sponsori/Electro.png"
+                                    src="/Poze/Logo/BesteamLogo.png"
                                     class="custom-block-image-sponsori img-fluid"
-                                    alt="Electro Mat Prompt Logo Placeholder"
+                                    alt=""
+                                    style="border-radius: 30px"
                                   />
                                 </div>
                               </div>
                               <div class="col mb-4">
-                                <div
-                                  class="custom-block-sponsori bg-white shadow-lg"
-                                >
+                                <div id="red-medical" class="custom-block-sponsori bg-white shadow-lg">
                                   <a
-                                    href="https://www.facebook.com/www.rgbenergyteam.ro/?locale=ro_RO"
+                                    href="https://www.redmedicalcenter.ro/"
                                     target="_blank"
                                     class="full-link"
                                   ></a>
                                   <div class="d-flex justify-content-center">
                                     <div>
                                       <h6 class="mb-1 text-center">
-                                        Electrice RGB
+                                        RED Medical Center
                                       </h6>
                                     </div>
                                   </div>
                                   <img
-                                    src="Poze/Sponsori/Logo_RGB.jpg"
+                                    id="red-medical-img"
+                                    width="1200"
+                                    height="900"
+                                    src="Poze/Sponsori/Logo-red.png"
                                     class="custom-block-image-sponsori img-fluid"
-                                    alt="Placeholder"
+                                    alt=" RED Medical Center Placeholder"
                                   />
                                 </div>
                               </div>
