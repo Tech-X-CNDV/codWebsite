@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -37,7 +37,8 @@
       /* RED Medical Center image adjustments: modestly larger and shifted down */
       #red-medical .custom-block-image-sponsori,
       #red-medical-img {
-        max-width: 100%;         /* allow full width within container */
+        max-width: 100%;
+        /* allow full width within container */
         height: auto;
         display: block;
         position: relative;
@@ -45,6 +46,7 @@
         transform: translate(-50%, 25%) scale(1.25);
         transform-origin: center center;
       }
+
       /* Electro Mat Prompt image positioned higher in square */
       #electro-mat .custom-block-image-sponsori,
       #electro-mat-img {
@@ -54,6 +56,12 @@
         position: relative;
         left: 50%;
         transform: translate(-50%, -15%) scale(1);
+        transform-origin: center center;
+      }
+
+      #tam .custom-block-image-sponsori,
+      #tam-img {
+        transform: scale(1.1);
         transform-origin: center center;
       }
     </style>
@@ -1508,6 +1516,31 @@
                               </div>
                               <div class="col mb-4">
                                 <div
+                                  id="tam"
+                                  class="custom-block-sponsori bg-white shadow-lg"
+                                >
+                                  <a
+                                    href="https://www.thnmedical.ro/"
+                                    target="_blank"
+                                    class="full-link"
+                                  ></a>
+                                  <div class="d-flex justify-content-center">
+                                    <div>
+                                      <h6 class="mb-1 text-center">
+                                        Tehnic Art Medical
+                                      </h6>
+                                    </div>
+                                  </div>
+                                  <img
+                                    id="tam-img"
+                                    src="/Poze/Sponsori/logo-tam.png"
+                                    class="custom-block-image-sponsori img-fluid"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="col mb-4">
+                                <div
                                   class="custom-block-sponsori bg-white shadow-lg"
                                 >
                                   <a
@@ -1603,7 +1636,8 @@
                                 </div>
                               </div>
                               <div class="col mb-4">
-                                <div id="electro-mat"
+                                <div
+                                  id="electro-mat"
                                   class="custom-block-sponsori bg-white shadow-lg"
                                 >
                                   <a
@@ -1624,7 +1658,6 @@
                                     class="custom-block-image-sponsori img-fluid"
                                     alt="Electro Mat Prompt Logo Placeholder"
                                   />
-
                                 </div>
                               </div>
                               <div class="col mb-4">
@@ -1650,7 +1683,7 @@
                                   />
                                 </div>
                               </div>
-            
+
                               <div class="col mb-4">
                                 <div
                                   class="custom-block-sponsori bg-white shadow-lg"
@@ -1674,7 +1707,10 @@
                                 </div>
                               </div>
                               <div class="col mb-4">
-                                <div id="red-medical" class="custom-block-sponsori bg-white shadow-lg">
+                                <div
+                                  id="red-medical"
+                                  class="custom-block-sponsori bg-white shadow-lg"
+                                >
                                   <a
                                     href="https://www.redmedicalcenter.ro/"
                                     target="_blank"
@@ -1696,10 +1732,12 @@
                                     alt=" RED Medical Center Placeholder"
                                   />
                                 </div>
-
                               </div>
                               <div class="col mb-4">
-                                <div id="red-medical" class="custom-block-sponsori bg-white shadow-lg">
+                                <div
+                                  id="red-medical"
+                                  class="custom-block-sponsori bg-white shadow-lg"
+                                >
                                   <a
                                     href="https://www.facebook.com/share/1ArRepw5No/?mibextid=wwXIfr"
                                     target="_blank"
@@ -1833,19 +1871,19 @@
                     </h4>
 
                     <div class="text-white text-left-right">
-                      <p style="color: white;">
+                      <p style="color: white">
                         <a href="Sezon4/sezon4" style="color: white !important"
                           ><b>Sezonul 4</b></a
                         >
                         - calificare la etapa națională
                       </p>
-                      <p style="color: white;">
+                      <p style="color: white">
                         <a href="Sezon5/sezon5" style="color: white !important"
                           ><b>Sezonul 5</b></a
                         >
                         - Locul 9/32 la Regionala Cluj
-                      </p style="color: white;">
-                      <p style="color: white;">
+                      </p>
+                      <p style="color: white">
                         <a href="Sezon6/sezon6" style="color: white !important"
                           ><b>Sezonul 6</b></a
                         >
@@ -1880,7 +1918,7 @@
                         națională. Locul 15/60 ca punctaj la etapa națională cu
                         4/6 meciuri câștigate
                       </p>
-                      <p style="color: white;">
+                      <p style="color: white">
                         <a href="Sezon9/sezon9" style="color: white !important"
                           ><b>Sezonul 9</b></a
                         >
