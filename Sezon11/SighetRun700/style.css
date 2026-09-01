@@ -1,0 +1,310 @@
+/* =========================
+   SIGHET 700 - PAGE STYLE
+   ========================= */
+
+:root {
+    --sighet-yellow: #ffda55;
+    --sighet-yellow-dark: #ffca28;
+    --sighet-text: #000;
+    --sighet-green: #00a83b;
+}
+
+/* =========================
+   GENERAL
+   ========================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #ffe37a 0%,
+        #ffda55 55%,
+        #ffd13d 100%
+    );
+}
+
+/* Elimină orice fundal pus de template */
+.topics-listing-page,
+.site-header {
+    background: transparent !important;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    background: rgba(255, 255, 255, 0.85);
+    border-top: 3px solid #ff0000;
+    min-height: 55px;
+
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar .container {
+    max-width: 1200px;
+}
+
+.navbar-brand {
+    color: #000 !important;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    font-size: 20px;
+}
+
+.navbar-brand i {
+    display: none;
+}
+
+.navbar .nav-link {
+    color: #000 !important;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.navbar .nav-link:hover {
+    color: #d00000 !important;
+}
+
+/* Buton dark mode */
+.navbar-icon {
+    border: none;
+    background: transparent;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar-icon:hover {
+    transform: scale(1.1);
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.site-header {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+/* Containerul principal */
+.site-header > .container {
+    max-width: 1000px !important;
+}
+
+/* =========================
+   BREADCRUMB
+   ========================= */
+
+.breadcrumb {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.breadcrumb-item {
+    font-size: 9px;
+}
+
+.breadcrumb-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #fff;
+}
+
+/* =========================
+   TITLURI
+   ========================= */
+
+.site-header h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.site-header h1 {
+    color: #000;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+/* =========================
+   POSTĂRI / CONȚINUT
+   ========================= */
+
+.sighet-post {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+/* Imaginile postărilor */
+.sighet-post img {
+    display: block;
+
+    width: 75%;
+    height: auto;
+
+    margin: 0 auto;
+
+    object-fit: contain;
+}
+
+/* Textul de sub imagine */
+.sighet-post p {
+    width: 75%;
+
+    margin: 10px auto 0 auto;
+
+    padding: 0;
+
+    color: #000;
+
+    font-family:
+        "Franklin Gothic Medium",
+        "Arial Narrow",
+        Arial,
+        sans-serif;
+
+    font-size: 12px;
+    line-height: 1.4;
+
+    text-align: left;
+}
+
+.sighet-post a {
+    color: #000;
+    font-weight: bold;
+}
+
+.sighet-post a:hover {
+    color: #d00000;
+}
+
+/* =========================
+   TEXT / FOTO LABEL
+   ========================= */
+
+.foto-label {
+    color: var(--sighet-green);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    text-align: left;
+
+    width: 75%;
+    margin: -25px auto 5px auto;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.site-footer {
+    background: transparent !important;
+
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    margin-top: 40px;
+}
+
+.site-footer-title {
+    color: #000;
+}
+
+.site-footer p {
+    color: #000;
+}
+
+.site-footer-links {
+    margin: 0;
+}
+
+.site-footer-link {
+    color: #000 !important;
+}
+
+.site-footer-link:hover {
+    color: #d00000 !important;
+}
+
+.social-icon-link {
+    color: #000 !important;
+}
+
+.social-icon-link:hover {
+    color: #d00000 !important;
+}
+
+/* =========================
+   COPYRIGHT
+   ========================= */
+
+.copyright-text {
+    color: #000;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .navbar-brand span {
+        font-size: 18px;
+    }
+
+    .site-header > .container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .site-header h2 {
+        font-size: 18px;
+    }
+
+    .site-header h1 {
+        font-size: 25px;
+    }
+
+    .sighet-post img {
+        width: 95%;
+    }
+
+    .sighet-post p {
+        width: 95%;
+        font-size: 11px;
+    }
+
+    .foto-label {
+        width: 95%;
+    }
+}
