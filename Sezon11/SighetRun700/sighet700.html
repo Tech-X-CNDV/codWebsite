@@ -228,20 +228,23 @@
         </div>
         <center>
           <div class="hdStation">
-            <p class="ore" >
-                            ⏰ Orele de start:<br>
+          <div class="caseta-portocalie">
+            <div class="titlu-centrat">⏰ Orele de start:</div>
+            
+            <div class="lista-ore">
               🥇 08:30 – Maraton<br>
               🏃 09:30 – 10 km Panorama & Semimaraton<br>
-              👟 10:00 – Cursa populară de 5 km<br>
-
+              👟 10:00 – Cursa populară de 5 km<br><br>
               📍 Pentru participanții veniți din afara Sighetului: avem și parcare disponibilă în apropierea evenimentului.
-<br>
+            </div>
+
+            <div class="titlu-centrat coordonate">
               📌 Coordonate parcare:<br>
               47°55'15.97"N 23°52'58.77"E
-            </p>
-
+            </div>
           </div>
-        </center>
+        </div>
+                </center>
         <center>
           <div class="hdStation">
             <p style="size: 5vw;">Hartă cu punctele de hidratare/alimentare</p>
@@ -395,6 +398,39 @@
   </body>
 </html>
 <style>
+  /* Containerul principal portocaliu */
+.caseta-portocalie {
+  background-color: rgb(255, 122, 60);
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 850px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #000;
+}
+
+/* Titluri centrate */
+.titlu-centrat {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.titlu-centrat.coordonate {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+/* Lista aliniată la stânga din același punct */
+.lista-ore {
+  text-align: left;
+  font-size: 21px;
+  line-height: 1.6;
+  padding-left: 20px; /* oferă o margine curată la stânga */
+}
   .hdStation iframe{
     border: 10px solid rgb(255, 122, 60);
     border-radius: 18px;
@@ -538,15 +574,24 @@
 }
 .ore{
   font-size:150px;
+
 }
 /* =========================
     TELEFON
    ========================= */
 
 @media (max-width: 768px) {
-    .ore{
-      font-size:4vw;
-    }
+.caseta-portocalie {
+    width: 92%;
+    padding: 15px;
+  }
+  .titlu-centrat {
+    font-size: 22px;
+  }
+  .lista-ore {
+    font-size: 16px;
+    padding-left: 10px;
+  }
     .hdStation iframe {
       width: 90%;
     }
