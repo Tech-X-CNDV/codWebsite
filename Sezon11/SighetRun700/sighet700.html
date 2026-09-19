@@ -188,6 +188,13 @@
               <h2>SIGHETRUN700</h2>
             </div>
           </div>
+          <center>
+            <div class="butonGalerie">
+<!-- HTML !-->
+<button class="button-52" role="button">Accesează galerie photo/video</button>
+              
+            </div>
+          </center>
           <div class="row align-items-center">
             <h1 class="text-center">SighetRun700</h1>
           </div>
@@ -398,6 +405,43 @@
   </body>
 </html>
 <style>
+  .button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
   /* Containerul principal portocaliu */
 .caseta-portocalie {
   background-color: rgb(255, 122, 60);
